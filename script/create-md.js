@@ -18,7 +18,7 @@ bookList.forEach((book,i)=>{
   if(mdFiles.indexOf(fileName)>-1){
     console.log('read record already exists', book.title, book.published);
   }else{
-    const markdown =`${JSON.stringify(book,null,' ')}
+    const markdown =`${JSON.stringify(book, null, ' ')}
 ---
 
 `;
