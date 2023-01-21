@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { csvParse } from 'd3';
-import { bookSlug, readSlug } from '../src/lib/bookSlug.js';
+import { bookSlug, readSlug } from '../src/lib/slugger.js';
 
 const dataDir = './static/data';
 const mdDir = './static/markdown';
@@ -18,22 +18,10 @@ bookList.forEach((book,i)=>{
   if(mdFiles.indexOf(fileName)>-1){
     console.log('read record already exists', book.title, book.published);
   }else{
-    const markdown = `
-    ---
-    title:${book.title}
-    authors:${book.authors}
-    editors:${book.editors}
-    translator:${book.translator}
-    date:${book.date}
-    rating:${book.rating}
-    re-read:${book["re-read"]}
-    pages:${book.pages}
-    non-fiction:${book["non-fiction"]}
-    comic:${book.comic}
-    published:${book.published}
-    ---
+    const markdown =`${JSON.stringify(book,null,' ')}
+---
 
-    `;
+`;
     fs.writeFileSync(path.join(mdDir,fileName), markdown);
   }
   fs.writeFileSync(path.join(dataDir,'readIndex.json'), JSON.stringify(slugList,null,' '));

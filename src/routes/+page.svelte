@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import {bookSlug} from '../lib/slugger.js';
+  export let data;
+</script>
+<table>
+  <ul>
+    {#each data.readingList as read}
+    <li>
+      <a href="book-{bookSlug(read)}">{read.title} &mdash;
+      {read.authors}
+      ({read.published})</a>
+    </li>
+  {/each}
+  </ul>
+</table>
+<pre>
+  {JSON.stringify(data,null,' ')}
+</pre>
