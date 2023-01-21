@@ -1,16 +1,23 @@
 import * as fs from 'fs';
+import * as path from 'path';
 import { csvParse } from 'd3';
-import bookSlug from '../src/lib/bookSlug.js';
+import { bookSlug, readSlug } from '../src/lib/bookSlug.js';
 
-const bookList = csvParse(fs.readFileSync('./static/data/reading-list.csv','utf-8')).filter(d=>d.title);
-const mdFiles = fs.readdirSync('./static/markdown');
+const dataDir = './static/data';
+const mdDir = './static/markdown';
 
-bookList.forEach((book)=>{
-  const fileName = `${bookSlug(book)}.md`;
+const bookList = csvParse(fs.readFileSync(path.join(dataDir,'reading-list.csv'),'utf-8')).filter(d=>d.title);
+const mdFiles = fs.readdirSync(mdDir);
+const slugList = {};
+bookList.forEach((book,i)=>{
+  const fileName = `${readSlug(book)}.md`;
+  if(!slugList[bookSlug(book)]){
+    slugList[bookSlug(book)] = [];
+  }
+  slugList[bookSlug(book)].push(readSlug(book));
   if(mdFiles.indexOf(fileName)>-1){
-    console.log('book found');
+    console.log('read record already exists', book.title, book.published);
   }else{
-    console.log('new book ', book.title, book.published);
     const markdown = `
     ---
     title:${book.title}
@@ -27,5 +34,11 @@ bookList.forEach((book)=>{
     ---
 
     `;
+    fs.writeFileSync(path.join(mdDir,fileName), markdown);
   }
-})
+  fs.writeFileSync(path.join(dataDir,'readIndex.json'), JSON.stringify(slugList,null,' '));
+});
+
+const markdownCount = fs.readdirSync(mdDir).filter(f=>(f.indexOf('.md')>0)).length
+
+console.log(`${bookList.length} == ${markdownCount} (${bookList.length == markdownCount})`)
