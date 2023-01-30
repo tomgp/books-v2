@@ -1,7 +1,9 @@
 <script>
-  import {bookSlug, authorSlug} from '../lib/slugger.js';
-  export let data;
+import Bookstack from '../components/bookstack.svelte';
+import {bookSlug, authorSlug} from '../lib/slugger.js';
+export let data;
 </script>
+<Bookstack books={data.readingList}></Bookstack>
 <table>
   <ul>
     {#each data.readingList as read}
