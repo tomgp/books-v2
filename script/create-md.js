@@ -24,7 +24,7 @@ bookList.forEach((book,i)=>{
 `;
     fs.writeFileSync(path.join(mdDir,fileName), markdown);
   }
-  fs.writeFileSync(path.join(dataDir,'readIndex.json'), JSON.stringify(slugList,null,' '));
+  fs.writeFileSync(path.join(dataDir,'readIndex.json'), JSON.stringify(slugList,null,' ')); //a index of times a books was read
 });
 
 const markdownCount = fs.readdirSync(mdDir).filter(f=>(f.indexOf('.md')>0)).length

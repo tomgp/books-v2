@@ -8,13 +8,35 @@
   export let width = 300;
   export let margin = {top:0,left:20,bottom:0,right:20};
   export let jitter = 0.1;
+  export let splitOnKey = book => "book";
 
   let plotHeight = height-(margin.top+margin.bottom);
   let plotWidth = width-(margin.left+margin.right);
+
   let pageCount = books.reduce((count, book)=>{
     return Number(book.pages)+count;
   }, 0);
+
+  let stacks = {};
+
+  books.forEach(book=>{
+    if(!stacks[splitOnKey(book)]){
+      stacks[splitOnKey(book)] = {
+        pages:0,
+        books:[]
+      };
+    }
+    console.log(book);  
+    stacks[splitOnKey(book)].pages += Number(book.pages);
+    stacks[splitOnKey(book)].books.push(book);
+  });
+
+  // how many stacks are there...
+  let stackCount = Object.keys(stacks).length;
+  console.log(stacks, stackCount);
+
   let stack = [];
+
   $:{
     let maxPages = max( books.map(d=>Number(d.pages)) );
     
@@ -34,7 +56,7 @@
   }
 </script>
 {title}
-<svg viewBox="0 0 {width} {height}">
+<svg viewBox="0 0 {width} {height}" height={height} width={width}>
   {#each stack as book}
     <rect fill="none" stroke="black" width={book.width} height={book.height} x={book.x} y={book.y}></rect>
   {/each}
