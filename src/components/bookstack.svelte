@@ -38,9 +38,9 @@
   
     // how many stacks are there...
     stackCount = Object.keys(stacks).length;
-    console.log(Object.values(stacks).map(d=>d.bookCount));
-    console.log('>>', stackCount, biggestStack);
-    console.log(stacks);
+    // console.log(Object.values(stacks).map(d=>d.bookCount));
+    // console.log('>>', stackCount, biggestStack);
+    // console.log(stacks);
   }
 
 
@@ -63,12 +63,16 @@
   }
 
   function layoutStack([key, stack], i){
-    console.log('stack',i, key, stack);
+    // console.log('stack',i, key, stack);
     const maxWidth=plotWidth/stackCount;
     
     let acc = 0;
     stack.key = key;
     stack.books = stack.books.map((book,j)=>{
+      console.log((!book.pages ? `X ${book.title}`:':)'));
+      if(!book.pages || book.pages==''){
+        book.ignore = true;
+      }
       let jitter = Math.random()*5 - 2.5;
       
       book.x = 0 + jitter;
@@ -90,7 +94,9 @@ chart...
     <g class="stack" transform="translate({i*plotWidth/stackCount},0)">
       <text dy="-5">{entry[1].key}</text>
       {#each entry[1].books as book}
+        {#if !book.ignore}
         <rect class="book" fill="none" stroke="black" width={book.width} height={book.height} x={book.x} y={book.y}></rect>
+        {/if}
       {/each}
     </g>
     {/each}

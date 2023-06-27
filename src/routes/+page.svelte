@@ -3,7 +3,6 @@ import Bookstack from '../components/bookstack.svelte';
 import {bookSlug, authorSlug} from '../lib/slugger.js';
 export let data;
 
-console.log()
 let top = data.readingList.filter(d=>d.rating=="++");
 </script>
 <Bookstack
@@ -18,7 +17,9 @@ let top = data.readingList.filter(d=>d.rating=="++");
       <a href="book-{bookSlug(read)}">{read.title}</a>
     </td>
     <td>
-      <a href="author-{authorSlug(read.authors)}">{read.authors}</a>
+      {#each read.authors as author, ia}
+      <a href="author-{authorSlug(author)}">{author}</a>{(ia==read.authors.length - 1) ? '':', '}
+      {/each}
     </td>
     <td>{read.published}</td>
   </tr>
@@ -27,3 +28,9 @@ let top = data.readingList.filter(d=>d.rating=="++");
 <!-- <pre>
   {JSON.stringify(data,null,' ')}
 </pre> -->
+<style>
+  td{
+    vertical-align: top;
+    text-align: start;
+  }
+</style>

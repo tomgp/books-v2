@@ -8,6 +8,6 @@ export function bookSlug(book){
   return slugify(`${book.title}(${book.published})`,{remove: /[:!;,\.\#*&%\\"\\\/]/g})
 }
 
-export function authorSlug(authorList){
-  return slugify(authorList.split(',')[0].trim(), {remove: /[:!;,\.\#*&%\\"\\\/]/g})
+export function authorSlug(author){
+  return slugify(author, {remove: /[:!;,\.\#*&%\\"\\\/]/g})
 }
