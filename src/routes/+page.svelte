@@ -7,20 +7,23 @@ console.log()
 let top = data.readingList.filter(d=>d.rating=="++");
 </script>
 <Bookstack
- splitOnKey={book=>String(book.date).split('-')[0]} 
- books={data.readingList}></Bookstack>
+  splitOnKey={book=>String(book.date).split('-')[0]} 
+  books={data.readingList}></Bookstack>
 <table>
-  <ul>
+
     {#each data.readingList as read}
-      <!-- {#each top as read} -->
-    <li>
-      <a href="book-{bookSlug(read)}">{read.title}</a> &mdash;
+    <tr>
+    <td>{read.date}</td>
+    <td>
+      <a href="book-{bookSlug(read)}">{read.title}</a>
+    </td>
+    <td>
       <a href="author-{authorSlug(read.authors)}">{read.authors}</a>
-      ({read.published})
-    </li>
+    </td>
+    <td>{read.published}</td>
+  </tr>
   {/each}
-  </ul>
 </table>
-<pre>
+<!-- <pre>
   {JSON.stringify(data,null,' ')}
-</pre>
+</pre> -->
