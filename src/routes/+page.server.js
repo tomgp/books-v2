@@ -1,15 +1,11 @@
 import * as fs from 'fs';
-import { csvParse } from 'd3';
+import { loadReadingList } from '../lib/data-load.js';
 
 export async function load() {
-  const list = fs.readFileSync('static/data/reading-list.csv','utf-8');
+  const list = loadReadingList();
   const index = fs.readFileSync('static/data/readIndex.json','utf-8');
   return {
-    readingList:csvParse(list, (row)=>{
-      row.authors = row.authors.split(',').map(a=>a.trim());
-      console.log(row.authors);
-      return row;
-    }),
+    readingList:list,
     index:JSON.parse(index)
   };
 }

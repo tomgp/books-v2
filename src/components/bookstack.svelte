@@ -62,14 +62,10 @@
     Object.entries(stacks).forEach(layoutStack)
   }
 
-  function layoutStack([key, stack], i){
-    // console.log('stack',i, key, stack);
-    const maxWidth=plotWidth/stackCount;
-    
+  function layoutStack([key, stack], i){    
     let acc = 0;
     stack.key = key;
     stack.books = stack.books.map((book,j)=>{
-      console.log((!book.pages ? `X ${book.title}`:':)'));
       if(!book.pages || book.pages==''){
         book.ignore = true;
       }

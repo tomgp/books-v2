@@ -2,7 +2,7 @@
 import Bookstack from '../components/bookstack.svelte';
 import {bookSlug, authorSlug} from '../lib/slugger.js';
 export let data;
-
+console.log(data.readingList)
 let top = data.readingList.filter(d=>d.rating=="++");
 </script>
 <Bookstack
