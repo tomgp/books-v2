@@ -7,7 +7,7 @@
   export let width = 700;
   export let margin = { top:50, left:20, bottom:10, right:20 };
   export let jitter = 0.1;
-  export let splitOnKey = book => "book";
+  export let splitOnKey = book => "books";
 
   let plotHeight = height-(margin.top+margin.bottom);
   let plotWidth = width-(margin.left+margin.right);

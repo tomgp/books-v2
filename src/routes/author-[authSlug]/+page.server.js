@@ -1,12 +1,17 @@
 import * as fs from 'fs';
-import { rowParser } from '../../lib/data-load.js';
+import { loadReadingList, rowParser } from '../../lib/data-load.js';
 import { csvParse } from 'd3';
+import { authorSlug } from '../../lib/slugger.js';
 
-const list = fs.readFileSync('static/data/reading-list.csv','utf-8');
+const list = loadReadingList();
+
 
 export async function load({params}) {
   return {
-    books: list,
+    books: list.filter(row=>{
+        const authorSlugs = row.authors.map(d=>authorSlug(d));
+        return(authorSlugs.indexOf(params.authSlug) > -1);
+      }),
     slug: params.authSlug
   };
 }
