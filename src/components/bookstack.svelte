@@ -1,4 +1,6 @@
 <script>
+  import Book from './Book.svelte';
+
   import { scaleLinear, max, scaleOrdinal,scaleBand, range} from 'd3';
 
   export let books = [];
@@ -8,6 +10,9 @@
   export let margin = { top:50, left:20, bottom:10, right:20 };
   export let jitter = 0.1;
   export let splitOnKey = book => "books";
+
+  let meanAspectRatio = 3000; // if 1 page is 1 pixel thick the length of the books spine should be this number of px
+  let meanSpineLength = meanAspectRatio;
 
   let plotHeight = height-(margin.top+margin.bottom);
   let plotWidth = width-(margin.left+margin.right);
@@ -46,8 +51,6 @@
 
 
   // work out the scales
-
-
   $:{
     
     pageScale
@@ -59,7 +62,11 @@
       .range([0,plotWidth])
       .paddingInner(0.15);
 
-    Object.entries(stacks).forEach(layoutStack)
+
+    meanSpineLength = pageScale(1) * meanAspectRatio;
+    console.log('S', meanSpineLength);
+    Object.entries(stacks).forEach(layoutStack);
+
   }
 
   function layoutStack([key, stack], i){    
@@ -69,10 +76,10 @@
       if(!book.pages || book.pages==''){
         book.ignore = true;
       }
-      let jitter = Math.random()*5 - 2.5;
-      
+      let jitterwidth = stackScale.bandwidth()/20
+      let jitter = Math.random()*(jitterwidth) - jitterwidth/2;
       book.x = 0 + jitter;
-      book.width = stackScale.bandwidth()
+      book.width = Math.min(stackScale.bandwidth(), meanSpineLength + jitter)
       book.height = pageScale(Number(book.pages));
       acc+= book.height;
       book.y = plotHeight-acc
@@ -91,7 +98,9 @@ chart...
       <text dy="-5">{entry[1].key}</text>
       {#each entry[1].books as book}
         {#if !book.ignore}
-        <rect class="book" fill="none" stroke="black" width={book.width} height={book.height} x={book.x} y={book.y}></rect>
+        <g transform="translate({book.x},{book.y})">
+          <Book width={book.width} height={book.height} title={book.title} author={" "}></Book>
+        </g>
         {/if}
       {/each}
     </g>
