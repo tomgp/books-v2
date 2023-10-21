@@ -4,13 +4,16 @@ import {bookSlug, authorSlug} from '../lib/slugger.js';
 export let data;
 console.log(data.readingList)
 
+let currentList = data.readingList
+  .filter(r=>r.date)
+  .reverse()
 </script>
 <Bookstack
   splitOnKey={book=>String(book.date).split('-')[0]} 
-  books={data.readingList}></Bookstack>
+  books={currentList}></Bookstack>
 
 <table>
-  {#each data.readingList as read}
+  {#each currentList as read}
   <tr>
     <td>{read.date}</td>
     <td>
@@ -29,5 +32,9 @@ console.log(data.readingList)
   td{
     vertical-align: top;
     text-align: start;
+  }
+  td{
+    max-width: 33%;
+    min-width: 100px;
   }
 </style>
