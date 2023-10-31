@@ -4,7 +4,7 @@
   import { scaleLinear, scaleBand} from 'd3';
 
   export let books = [];
-  export let title = "books";
+  export let title = "";
   export let height = 350;
   export let width = 700;
   export let margin = { top:50, left:0, bottom:0, right:0 };
@@ -85,13 +85,13 @@
   }
 
 </script>
-{title}
+{#if title!=""}<h1>{title}</h1>{/if}
 <div class="chart">
   <svg viewBox="0 0 {width} {height}">
     <g class="plot" transform="translate({margin.left}, {margin.top})">
       {#each Object.entries(stacks) as entry, i}
       <g class="stack" transform="translate({i*plotWidth/stackCount},0)">
-        <text dy="-5">{entry[1].key}</text>
+        <!-- <text dy="-5">{entry[1].key}</text> -->
         {#each entry[1].books as book}
           {#if !book.ignore}
           <g transform="translate({book.x},{book.y})">

@@ -10,21 +10,20 @@ let currentList = data.readingList
 </script>
 <Bookstack
   splitOnKey={book=>String(book.date).split('-')[0]} 
-  books={currentList}></Bookstack>
-
+  books={currentList}>
+</Bookstack>
 <table>
   {#each currentList as read}
   <tr>
     <td>{read.date}</td>
     <td>
-      <a href="book-{bookSlug(read)}">{read.title}</a>
+      <a href="book-{bookSlug(read)}">{read.title}</a> ({read.published})
     </td>
     <td>
       {#each read.authors as author, ia}
       <a href="author-{authorSlug(author)}">{author}</a>{(ia==read.authors.length - 1) ? '':', '}
       {/each}
     </td>
-    <td>{read.published}</td>
   </tr>
   {/each}
 </table>

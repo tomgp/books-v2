@@ -1,4 +1,3 @@
-import * as fs from 'fs';
 import { loadReadingList, loadReadIndex } from '../lib/data-load.js';
 
 export async function load() {
