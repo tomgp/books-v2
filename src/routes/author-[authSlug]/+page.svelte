@@ -1,6 +1,5 @@
 <script>
-    import { authorSlug,bookSlug } from '../../lib/slugger.js';
-	import Bookstack from "../../components/bookstack.svelte";
+    import { bookSlug } from '../../lib/slugger.js';
 
     export let data;
 </script>
@@ -11,4 +10,3 @@
 <li><a href="book-{bookSlug(book)}">{book.title} ({book.published})</a>. Read on: {book.date}</li>
 {/each}
 </ul>
-<!-- <Bookstack books={data.books}></Bookstack> -->

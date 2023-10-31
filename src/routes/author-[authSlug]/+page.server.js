@@ -1,6 +1,4 @@
-import * as fs from 'fs';
-import { loadReadingList, rowParser } from '../../lib/data-load.js';
-import { csvParse } from 'd3';
+import { loadReadingList } from '../../lib/data-load.server.js';
 import { authorSlug } from '../../lib/slugger.js';
 
 const list = loadReadingList();
