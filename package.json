@@ -4,6 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
+		"host": "vite dev --host",
 		"scaffold": "node ./script/create-md.js",
 		"prebuild": "echo 'pre build'",
 		"build": "vite build",
