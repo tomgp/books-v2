@@ -8,9 +8,13 @@
 
 <h1>{overViewData.title}&nbsp;({overViewData.published})</h1>
 <p>
-	By <a href="author-{authorSlug(String(overViewData.authors))}">{overViewData.authors}</a
-	>{#if overViewData.translator}. Translated by {overViewData.translator}{/if}
+	By 
+	{#each overViewData.authors as author, i}
+		<a href="author-{authorSlug(author)}">{author}</a>{#if i<overViewData.authors.length-1}{@html ',&#x20;'}{/if}
+	{/each}
+	{#if overViewData.translator}. Translated by {overViewData.translator}{/if}
 </p>
+<p>{overViewData['non-fiction'] ? "Non fiction":"Fiction"}</p>
 
 <!-- <a href="/{data.slug}">LINK {data.slug}</a> -->
 
