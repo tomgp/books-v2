@@ -8,7 +8,7 @@
 <ul>
 	{#each data.books as book}
 		<li>
-			<a href="book-{bookSlug(book)}">{book.title} ({book.published})</a>. Read on: {book.date}
+			<a href="book-{bookSlug(book)}">{book.title} ({book.published})</a> Read&nbsp;on:&nbsp;{book.date}
 		</li>
 	{/each}
 </ul>

@@ -1,4 +1,7 @@
-
+<script>
+  import { page } from '$app/stores';
+  let data = $page.data;
+</script>
 <div class="alignment">
   <nav><strong>books</strong> <a href="/">index</a>, <a href="about">about</a></nav>
   <div class="border">
@@ -6,16 +9,16 @@
   <slot />
   </main>
   </div>
-
   <footer>
-    TGP 
+    All text and photographs are &#169; <a href="https://www.toffeemilkshake.co.uk">Tom Pearson 2009-2024</a> unless otherwise noted
+    <!-- <pre>{JSON.stringify(data)}</pre> -->
   </footer>
 </div>
 <style>
   :root{
     --text: black;
-    --highlight: blue;
-    --field:rgb(252, 239, 211);
+    --highlight: rgb(165, 22, 22);
+    --field:rgb(252, 245, 231);
   }
   
   :global(body){
@@ -23,6 +26,7 @@
     background-color: var(--field, white);
     font-size: 16px;
     font-family: sans-serif;
+    font-family: Newsreader,serif;
     padding: 0;
     margin: 0;
   }
@@ -43,6 +47,15 @@
     background-color: var(--highlight, blue);
   }
 
+  :global(h1,h2,h3){
+    font-family: Newsreader,serif;
+  }
+  :global(ul){
+    padding: 0;
+    list-style: none;
+    line-height: 1.3rem;
+  }
+
   .alignment{
     display: flex;
     flex-direction: column;
@@ -59,6 +72,7 @@
     min-height: 70vh;
     width: 40lh;
     max-width: 100dvw;
+    position: relative;
   }
   main{
     width: 100%;

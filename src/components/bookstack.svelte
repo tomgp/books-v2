@@ -92,10 +92,12 @@
 						{/if}
 					{/each}
 				</g>
-				<text class="stack-title" transform="translate({(i * plotWidth) / stackCount  + (plotWidth / stackCount)/2},{height - 55})">{entry[1].key}</text>
+				<text class="stack-title" 
+					transform="translate({(i * plotWidth) / stackCount},{height - 55})">{entry[1].key}</text>
 			{/each}
 		</g>
 	</svg>
+	<div class="tooltip">TOOLTIP!</div>
 </div>
 
 <style>
@@ -110,11 +112,10 @@
 	}
 	.stack-title{
 		fill:black;
-		font-weight: bold;
-		font-size: 16px;
+		font-size: 14px;
 	}
-	svg{
-		border-bottom: 1px solid black;
-		margin-bottom: 3lh;	
+	.chart{
+		padding-bottom: 3lh;	
 	}
+
 </style>

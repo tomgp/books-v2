@@ -4,6 +4,37 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
+		<style>
+		/* newsreader-regular - latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+				url('/fonts/Newsreader/newsreader-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+				url('/fonts/Newsreader/newsreader-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	}
+
+	/* newsreader-800 - latin */
+	@font-face {
+		font-family: 'Newsreader';
+		font-style: normal;
+		font-weight: 800;
+		src: local(''),
+				url('/fonts/Newsreader/newsreader-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+				url('/fonts/Newsreader/newsreader-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	}
+
+	/* newsreader-italic - latin */
+	@font-face {
+		font-family: 'Newsreader';
+		font-style: italic;
+		font-weight: 400;
+		src: local(''),
+				url('/fonts/Newsreader/newsreader-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+				url('/fonts/Newsreader/newsreader-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	}
+		</style>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

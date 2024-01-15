@@ -4,7 +4,10 @@ import adapter from '@sveltejs/adapter-static';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({ handleHttpError: 'warn' })
+		adapter: adapter({ handleHttpError: 'warn' }),
+		prerender:{
+			handleHttpError:'ignore'
+		}
 	}
 };
 
