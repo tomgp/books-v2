@@ -7,7 +7,7 @@
 	export let title = '';
 	export let height = 350;
 	export let width = 700;
-	export let margin = { top: 50, left: 0, bottom: 0, right: 0 };
+	export let margin = { top: 50, left: 0, bottom: 20, right: 0 };
 	export let jitter = 0.18;
 	export let minPages = 100;
 	export let splitOnKey = (book) => 'books';
@@ -92,6 +92,7 @@
 						{/if}
 					{/each}
 				</g>
+				<text class="stack-title" transform="translate({(i * plotWidth) / stackCount  + (plotWidth / stackCount)/2},{height - 55})">{entry[1].key}</text>
 			{/each}
 		</g>
 	</svg>
@@ -106,5 +107,14 @@
 		font-weight: bold;
 		fill: none;
 		stroke: black;
+	}
+	.stack-title{
+		fill:black;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	svg{
+		border-bottom: 1px solid black;
+		margin-bottom: 3lh;	
 	}
 </style>
