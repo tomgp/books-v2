@@ -142,7 +142,7 @@ The Hunger Games,Suzanne Collins,,,2012-03-01,,,464,,,2008
 Catching Fire,Suzanne Collins,,,2012-03-01,,,480,,,2009
 The Lovecraft Anthology: Volume 2,Various,Dan Lockwood,,2012-03-01,,,128,,TRUE,2012
 Mockingjay,Suzanne Collins,,,2012-03-01,,,448,,,2010
-Skippy Dies,Paul Murray,,,2012-04-01,-,,672,,,2010
+Skippy Dies,Paul Murray,,,2012-04-01,-,,,,,2010
 Space Opera,Various,Brian W. Aldiss,,2012-04-01,,,328,,,1974
 Solaris Rising: The New Solaris Book of Science Fiction,Various,Ian Whates,,2012-04-01,,,384,,,2011
 The Stars My Destination,Alfred Bester,,,2012-04-01,+,,256,,,1957
@@ -182,7 +182,7 @@ Xed,Charles Burns,,,2011-09-01,,,56,,TRUE,2010
 The Hive,Charles Burns,,,2012-12-01,,,80,,TRUE,2012
 Pure,Andrew Miller,,,2012-12-01,+,,352,,,2011
 Superman: Whatever Happened to the Man of Tomorrow?,Alan Moore,,,2012-11-01,,,128,,TRUE,1986
-Microscope,Ben Robbins,,,2012-08-01,,,128,TRUE,,2011
+Microscope,Ben Robbins,,,2012-08-01,,,,TRUE,,2011
 "MP3: The Meaning of a Format (Sign, Storage, Transmission) ",Jonathan Sterne,,,2013-06-14,,,360,TRUE,,2012
 The Odyssey,Homer,,Robert Fagles,2014-02-03,,,560,,,-800
 Telegraph Avenue,Michael Chabon,,,2013-08-11,,,640,,,2012
@@ -381,7 +381,7 @@ Convenience Store Woman,Sayaka Murata,,Ginny Tapley Takemori,2018-10-08,+,,176,,
 The Poisonwood Bible,Barbara Kingsolver,,,2018-10-25,++,,614,,,1998
 HOE #999: Decennial Appreciation and Celebratory Analysis,Jarett Kobek,,,2018-10-31,,,128,,,2010
 The Spire,William Golding,,,2018-11-16,+,,163,,,1964
-Pet Semetary,Steven King,,,2018-11-30,,,480,,,1983
+Pet Semetary,Stephen King,,,2018-11-30,,,480,,,1983
 "Things That Bother Me; death, freedom, the self, etc",Galen Strawson,,,2018-12-13,+,,240,TRUE,,2018
 A Wizard of Earthsea,Ursula K. Le Guin,,,2018-12-30,++,TRUE,304,,,1968
 Frankenstein,Mary Shelly,,,2019-01-09,+,,288,,,1818
@@ -487,6 +487,7 @@ The Ill Made Knight,T. H. White,,,2022-01-10,,,291,,,1940
 Sky Song,Abi Elphinstone,,,2022-01-26,,,288,,,2018
 Vanity Fair ,William Makepeace Thackeray,,,2022-03-24,,,965,,,1848
 Mort,Terry Pratchett,,,2022-03-25,+,TRUE,272,,,1987
+"Avatar, The Last Airbender: The Shadow of Kyoshi",F. C. Yee,,,2022-03-28,,,448,,,2020
 The Midnight Library,Matt Haig,,,2022-03-30,,,304,,,2020
 "Dangerous Visions and New Worlds: Radical Science Fiction, 1950 to 1985",,"Andrew Nette, Iain McIntyre",,2022-04-24,,,224,TRUE,,2021
 Day of Ascension ,Adrian Tchaikovsky,,,2022-05-01,,,197,,,2022
@@ -514,6 +515,31 @@ The It Girl,Ruth Ware,,,2022-12-09,,,432,,,2022
 Wasp,Eric Frank Russell,,,2022-12-15,,TRUE,192,,,1957
 The Long War,"Terry Pratchett,Stephen Baxter",,,2022-12-30,,,501,,,2013
 The Great Derangement,Amitav Ghosh,,,2023-01-06,,,176,TRUE,,2017
+Hyperion,Dan Simmons,,,2023-02-01,+,,473,,,1989
+Dice Men,"Ian Livingstone, Steve Jackson",,,2023-02-13,,,224,TRUE,,2022
+Jonathan Strange and Mr Norrell,Susanna Clarke,,,2023-03-01,++,TRUE,1024,,,2005
+The Lottery: Or the Adventures of James Harris,Shirley Jackson,,,2023-03-11,+,,248,,,1948
+A Desolation Called Peace,Arkady Martine,,,2023-04-08,,,496,,,2022
+The Hitchhiker's Guide To The Galaxy,Douglas Adams,,,2023-04-10,,TRUE,159,,,1979
+The Restaurant At The End Of The Universe,Douglas Adams,,,2023-05-01,,TRUE,187,,,1980
+Debt: The First 5000 Years,David Graeber,,,2023-05-08,,,534,TRUE,,2011
+Elmet,Fiona Mozley,,,2023-05-11,+,,320,,,2017
+Die Volume 1: Fantasy Heartbreaker,"Kieron Gillen, Stephanie Hans",,,2023-05-14,,,184,,TRUE,2019
+Playing Oppression. The Legacy of Conquest and Empire in Colonialist Board Games,"Mary Flanagan, Mikael Jakobsson",,,2023-05-31,,,240,TRUE,,2023
+"Life, the Universe and Everything",Douglas Adams,,,2023-06-01,,TRUE,160,,,1982
+Eminent Domain,Carl Neville,,,2023-06-15,+,,460,,,2020
+Either/Or,Elif Batuman,,,2023-07-17,+,,358,,,2022
+1066 And All That,"W. C. Sellar,R. J. Yeatman ",,,2023-07-27,,,140,,,1930
+This is How You Lose the Time War,"Amal El-Mohtar,Max Gladstone",,,2023-08-01,,,208,,,2019
+The Sunken Land Begins To Rise Again,M John Harrison,,,2023-08-19,+,,254,,,2020
+Ruth,Elizabeth Gaskell,,,2023-09-28,+,,432,,,1853
+The First Men In The Moon,H G Wells,,,2023-10-18,,,150,,,1901
+Roadwork,Stephen King,,,2023-10-30,,,364,,,1981
+The Descent of Man,Grayson Perry,,,2023-11-09,,,170,TRUE,,2017
+Subscript,Christine Brooke-Rose,,,2023-12-23,,,218,,,1999
+The Last Samurai,Helen DeWitt,,,2024-01-03,+,,497,,,2000
+The Skeleton Key,Erin Kelly,,,2024-01-07,,,497,,,2022
+,,,,,,,,,,
 The Ministry for the Future,Kim Stanley Robinson,,,,,,576,,,2020
 The Isles: A History,Norman Davies,,,,,,1120,TRUE,,2000
 The Man with the Compound Eyes,Wu Ming-Yi,,,,,,301,,,2012
