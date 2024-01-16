@@ -14,6 +14,7 @@
 
 	console.log(jitter);
 
+	let booksCopy = [...books].reverse();
 	let meanAspectRatio = 3000; // if 1 page is 1 pixel thick the length of the books spine should be this number of px
 	let meanSpineLength = meanAspectRatio;
 
@@ -28,7 +29,7 @@
 
 	// split into stacks
 	$: {
-		books.forEach((book) => {
+		booksCopy.forEach((book) => {
 			if (!stacks[splitOnKey(book)]) {
 				stacks[splitOnKey(book)] = {
 					pages: 0,
@@ -50,11 +51,8 @@
 	// work out the scales
 	$: {
 		pageScale.domain([0, biggestStack]).range([0, plotHeight]);
-
 		stackScale.domain(Object.keys(stacks)).range([0, plotWidth]).paddingInner(0.15);
-
 		meanSpineLength = pageScale(1) * meanAspectRatio;
-		console.log('S', meanSpineLength);
 		Object.entries(stacks).forEach(layoutStack);
 	}
 

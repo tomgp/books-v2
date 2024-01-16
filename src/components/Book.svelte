@@ -16,7 +16,7 @@
 </script>
 
 {#if decorated}
-	<rect fill={scheme.mainFill} stroke="none" x="0" y="0" width={textMargin} {height} />
+	<rect fill={'scheme.mainFill'} stroke="none" x="0" y="0" width={textMargin} {height} />
 	<rect
 		fill={scheme.accentFill}
 		stroke="none"
@@ -30,7 +30,10 @@
 		<rect fill="rgba(255,255,255,0.3)" stroke="none" {width} height={10} x="0" y={0} />
 	{/if}
 {:else}
-	<rect class="book" fill={scheme.mainFill} stroke="none" {width} {height} />
+	<rect 
+		class="book"
+		fill={scheme.mainFill}
+		stroke="none" {width} {height} />
 {/if}
 {#if title && author && entitled}
 	<text

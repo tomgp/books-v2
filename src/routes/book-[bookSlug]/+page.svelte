@@ -1,6 +1,7 @@
 <script>
 	import * as marked from 'marked';
 	import { authorSlug } from '../../lib/slugger.js';
+	import RatingMeter from '../../components/RatingMeter.svelte';
 	export let data;
 	let overViewData = data.content[0].data;
 	console.log(overViewData);
@@ -9,7 +10,9 @@
 <h1>{overViewData.title}&nbsp;({overViewData.published})</h1>
 
 <div class="start-grid">
-	<img src="https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/d739211a-a3a5-4855-dfc6-247ed0f89d00/bookshot" alt="" role="presentation">
+	{#if overViewData.image}
+	<img src={overViewData.image} alt="" role="presentation">
+	{/if}
 	<div>
 	<p>
 	By 
@@ -19,6 +22,8 @@
 	{#if overViewData.translator}. Translated by {overViewData.translator}{/if}
 	</p>
 	<p>{overViewData['non-fiction'] ? "Non fiction":"Fiction"}</p>
+	<p><RatingMeter rating={overViewData.rating}></RatingMeter></p>
+	<h2>links</h2>
 	</div>
 </div>
 <h2>Notes</h2>
@@ -26,7 +31,7 @@
 	<p>Read on {readThrough.data.date}</p>
 	{@html marked.parse(readThrough.markdown)}
 {/each}
-<h2>Elsewhere</h2>
+
 <style>
 	.start-grid{
 		display:grid;
