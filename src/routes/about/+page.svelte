@@ -15,7 +15,7 @@
   <li><a href="https://aworkinglibrary.com/reading/">Mandy Brown</a></li>
   <li><a href="https://tomcritchlow.com/2020/04/15/library-json/">Tom Critchlow</a></li>
   <li><a href="https://maggieappleton.com/library">Maggie Appleton</a></li>
-  <li><a href="https://macwright.com/reading/">Tom MacWright</a></li>
+  <li><a href="https://macwright.com/reading/">Tom MacWright</a> (so many Toms)</li>
 </ul>
 <style>
   ul.bulleted{
