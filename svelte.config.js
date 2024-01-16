@@ -5,13 +5,7 @@ import adapter from '@sveltejs/adapter-static';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({ 
-			pages: 'docs',
-      assets: 'docs',
-      fallback: null,
-      precompress: false,
-      strict: true
-		}),
+		adapter: adapter(),
 		prerender:{
 			handleHttpError:(msg)=>{
 				console.log('MMM',msg);
