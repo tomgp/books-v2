@@ -9,7 +9,8 @@
  "pages": "208",
  "non-fiction": "",
  "comic": "",
- "published": "2019"
+ "published": "2019",
+ "image": ""
 }
 ---
 

@@ -3,9 +3,12 @@
 	import { bookSlug, authorSlug } from '$lib/slugger.js';
 	import RatingIcon from '$lib/components/RatingIcon.svelte';
 	export let data;
-	console.log(data.readingList);
 
+	// only book that have a date (i.e finished reading them)
 	let currentList = data.readingList.filter((r) => r.date).reverse();
+
+	// split by year and month
+
 </script>
 
 <Bookstack splitOnKey={(book) => String(book.date).split('-')[0]} books={currentList} />
@@ -32,7 +35,7 @@
 	li{
 		display: grid;
 		grid-template-columns: 1fr 15fr;
-		line-height: 1.5lh;
+		margin-bottom: 0.6lh;
 	}
 	.details, .icon{
 		display: inline-block;
@@ -40,8 +43,8 @@
 	.icon{
 		width:1.5rem;
 	}
-	a{max-width:50%}
 	ul a{
+		text-decoration: none;
 		color: var(--text);
 	}
 	ul a:hover{

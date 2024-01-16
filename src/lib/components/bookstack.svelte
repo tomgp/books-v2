@@ -12,8 +12,6 @@
 	export let minPages = 100;
 	export let splitOnKey = (book) => 'books';
 
-	console.log(jitter);
-
 	let booksCopy = [...books].reverse();
 	let meanAspectRatio = 3000; // if 1 page is 1 pixel thick the length of the books spine should be this number of px
 	let meanSpineLength = meanAspectRatio;

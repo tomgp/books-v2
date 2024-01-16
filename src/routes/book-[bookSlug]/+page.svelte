@@ -3,8 +3,7 @@
 	import { authorSlug } from '$lib/slugger.js';
 	import RatingMeter from '$lib/components/RatingMeter.svelte';
 	export let data;
-	let overViewData = data.content[0].data;
-	console.log(overViewData);
+	let overViewData = data ? data.content[0].data : {};
 </script>
 
 <h1>{overViewData.title}&nbsp;({overViewData.published})</h1>

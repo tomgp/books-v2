@@ -9,7 +9,8 @@
  "pages": "187",
  "non-fiction": "",
  "comic": "",
- "published": "1980"
+ "published": "1980",
+ "image": ""
 }
 ---
 

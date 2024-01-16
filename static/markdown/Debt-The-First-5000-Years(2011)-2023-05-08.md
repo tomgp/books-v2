@@ -9,7 +9,8 @@
  "pages": "534",
  "non-fiction": "TRUE",
  "comic": "",
- "published": "2011"
+ "published": "2011",
+ "image": ""
 }
 ---
 

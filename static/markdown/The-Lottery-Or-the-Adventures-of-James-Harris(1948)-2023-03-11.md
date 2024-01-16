@@ -9,7 +9,8 @@
  "pages": "248",
  "non-fiction": "",
  "comic": "",
- "published": "1948"
+ "published": "1948",
+ "image": ""
 }
 ---
 

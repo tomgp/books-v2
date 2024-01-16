@@ -6,7 +6,9 @@ const config = {
 	kit: {
 		adapter: adapter({ handleHttpError: 'warn' }),
 		prerender:{
-			handleHttpError:'ignore'
+			handleHttpError:(msg)=>{
+				console.log('MMM',msg);
+			}
 		}
 	}
 };

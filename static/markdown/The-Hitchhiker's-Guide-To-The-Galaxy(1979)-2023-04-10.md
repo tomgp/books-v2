@@ -9,7 +9,8 @@
  "pages": "159",
  "non-fiction": "",
  "comic": "",
- "published": "1979"
+ "published": "1979",
+ "image": ""
 }
 ---
 

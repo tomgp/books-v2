@@ -9,7 +9,8 @@
  "pages": "240",
  "non-fiction": "TRUE",
  "comic": "",
- "published": "2023"
+ "published": "2023",
+ "image": ""
 }
 ---
 

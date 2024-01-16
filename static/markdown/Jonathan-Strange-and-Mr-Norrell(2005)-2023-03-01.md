@@ -9,7 +9,8 @@
  "pages": "1024",
  "non-fiction": "",
  "comic": "",
- "published": "2005"
+ "published": "2005",
+ "image": ""
 }
 ---
 

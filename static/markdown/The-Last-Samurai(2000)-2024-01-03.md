@@ -9,7 +9,8 @@
  "pages": "497",
  "non-fiction": "",
  "comic": "",
- "published": "2000"
+ "published": "2000",
+ "image": ""
 }
 ---
 

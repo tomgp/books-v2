@@ -10,7 +10,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "2022",
- "image":"https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/d739211a-a3a5-4855-dfc6-247ed0f89d00/bookshot"
+ "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/984fe0e6-41f1-485d-ab5d-80a442d3e000/bookshot"
 }
 ---
 

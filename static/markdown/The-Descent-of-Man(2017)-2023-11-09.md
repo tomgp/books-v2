@@ -9,7 +9,8 @@
  "pages": "170",
  "non-fiction": "TRUE",
  "comic": "",
- "published": "2017"
+ "published": "2017",
+ "image": ""
 }
 ---
 

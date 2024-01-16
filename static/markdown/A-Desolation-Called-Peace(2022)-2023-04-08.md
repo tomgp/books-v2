@@ -9,7 +9,8 @@
  "pages": "496",
  "non-fiction": "",
  "comic": "",
- "published": "2022"
+ "published": "2022",
+ "image": ""
 }
 ---
 
