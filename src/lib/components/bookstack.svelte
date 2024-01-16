@@ -72,10 +72,19 @@
 		});
 	}
 	let toolTipHTML = "TOOLTIP"
+	let toolTipActive = false;
+	let tipPos = {x:0, y:0};
 	function toolTip(ev, book){
-		console.log(ev,book);
+		toolTipActive = true;
 		toolTipHTML = `<p>${book.title}&nbsp;&mdash; ${book.authors[0]} ${book.authors[1]?`+${book.authors.length-1}`:''}</p>`
+		console.log(ev);
+		tipPos= {x:ev.layerX, y:ev.layerY}
 	}
+
+	function toolTipOff(){
+		toolTipActive = false;
+	}
+
 </script>
 
 {#if title != ''}<h1>{title}</h1>{/if}
@@ -87,7 +96,9 @@
 					<!-- <text dy="-5">{entry[1].key}</text> -->
 					{#each entry[1].books as book}
 						{#if !book.ignore}
-							<g transform="translate({book.x},{book.y})" on:mousemove={(ev)=>toolTip(ev,book)}>
+							<g transform="translate({book.x},{book.y})" 
+								on:mousemove={(ev)=>toolTip(ev,book)}
+								on:mouseout={()=>toolTipOff()}>
 								<Book width={book.width} height={book.height} rating={book.rating} />
 							</g>
 						{/if}
@@ -98,10 +109,28 @@
 			{/each}
 		</g>
 	</svg>
-	<div class="tooltip">{@html toolTipHTML}</div>
+	<div style="--y:{tipPos.y}px; --x:{tipPos.x}px" class="tooltip" class:active={toolTipActive}>{@html toolTipHTML}</div>
 </div>
 
 <style>
+
+	.tooltip{
+		position:absolute;
+		display: inline-block;
+		visibility:hidden;
+		pointer-events: none;
+		border: 1px solid var(--text);
+		padding: 1lh;
+		top: var(--y);
+		left: var(--x);
+		background-color: var(--field);
+		max-width:10lh;
+	}
+
+	.tooltip.active{
+		visibility:visible;
+	}
+
 	.chart {
 		width: 100%;
 		padding-bottom: 3lh;	
@@ -120,12 +149,6 @@
 		font-size: 14px;
 	}
 
-	.tooltip{
-		background-color: var(--field);
-		max-width:10lh;
-		position: absolute;
-		top:0;
-	}
 
 
 </style>
