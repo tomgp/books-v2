@@ -6,7 +6,7 @@
 <svg xmlns="http://www.w3.org/2000/svg"
   xml:space="preserve"
   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5"
-  viewBox="0 0 915 301"
+  viewBox="0 100 915 200"
   overflow="visible">
   <title>Rating:{score}/5</title>
   <g transform="translate(-100,0)">
