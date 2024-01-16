@@ -17,6 +17,14 @@
   <li><a href="https://maggieappleton.com/library">Maggie Appleton</a></li>
   <li><a href="https://macwright.com/reading/">Tom MacWright</a> (so many Toms)</li>
 </ul>
+<h2>Todo... </h2>
+<ul class="bulleted">
+  <li>Add notes and reviews that I've written elsewhere if I can find them</li>
+  <li>Add external links for books nd authors</li>
+  <li>More photographs</li>
+  <li>Collection pages</li>
+  <li>Use seeded random number for the stack layout to stop it redrawing when the JS gets loaded</li>
+</ul>
 <style>
   ul.bulleted{
     list-style:unset;
