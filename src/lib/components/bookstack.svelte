@@ -73,6 +73,7 @@
 			return book;
 		});
 	}
+
 </script>
 
 {#if title != ''}<h1>{title}</h1>{/if}
@@ -85,7 +86,7 @@
 					{#each entry[1].books as book}
 						{#if !book.ignore}
 							<g transform="translate({book.x},{book.y})">
-								<Book width={book.width} height={book.height} title={book.title} author={' '} />
+								<Book width={book.width} height={book.height} rating={book.rating} />
 							</g>
 						{/if}
 					{/each}

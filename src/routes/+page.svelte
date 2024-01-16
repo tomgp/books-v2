@@ -1,6 +1,7 @@
 <script>
-	import Bookstack from '../components/bookstack.svelte';
-	import { bookSlug, authorSlug } from '../lib/slugger.js';
+	import Bookstack from '$lib/components/bookstack.svelte';
+	import { bookSlug, authorSlug } from '$lib/slugger.js';
+	import RatingIcon from '$lib/components/RatingIcon.svelte';
 	export let data;
 	console.log(data.readingList);
 
@@ -8,31 +9,30 @@
 </script>
 
 <Bookstack splitOnKey={(book) => String(book.date).split('-')[0]} books={currentList} />
-<table>
+<ul>
 	{#each currentList as read}
-		<tr>
-			<td>{read.date}</td>
-			<td>
-				<a href="book-{bookSlug(read)}">{read.title}</a> ({read.published})
-			</td>
-			<td>
+		<li>
+				<div class="icon"><RatingIcon rating={read.rating} showAverage={false}></RatingIcon></div>
+				<div class="details">
+				<!-- {read.date} -->
+				<a href="book-{bookSlug(read)}">{read.title}</a> 
+					&mdash;
 				{#each read.authors as author, ia}
 					<a href="author-{authorSlug(author)}">{author}</a>{ia == read.authors.length - 1
 						? ''
 						: ', '}
 				{/each}
-			</td>
-		</tr>
+				({read.published})
+				</div>
+		</li>
 	{/each}
-</table>
+	</ul>
 
 <style>
-	td {
-		vertical-align: top;
-		text-align: start;
+	li{
+		display: flex;
 	}
-	td {
-		max-width: 33%;
-		min-width: 100px;
+	.details, .icon{
+		display: inline-block;
 	}
 </style>

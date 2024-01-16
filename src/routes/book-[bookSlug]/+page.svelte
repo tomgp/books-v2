@@ -1,7 +1,7 @@
 <script>
 	import * as marked from 'marked';
-	import { authorSlug } from '../../lib/slugger.js';
-	import RatingMeter from '../../components/RatingMeter.svelte';
+	import { authorSlug } from '$lib/slugger.js';
+	import RatingMeter from '$lib/components/RatingMeter.svelte';
 	export let data;
 	let overViewData = data.content[0].data;
 	console.log(overViewData);

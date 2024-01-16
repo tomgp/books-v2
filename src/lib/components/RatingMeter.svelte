@@ -1,7 +1,10 @@
 <script>
   export let rating="";
-  let scoreLookup = { "++":5,"+":4,"-":2,"--":1 }
-  let score = scoreLookup[rating]?scoreLookup[rating]:3;
+  function getNumericalRating(r){
+    let scoreLookup = { "++":5,"+":4,"-":2,"--":1 }
+    return scoreLookup[r] ? scoreLookup[r] : 3;
+  }
+  let score = getNumericalRating(rating);
 </script>
 <svg xmlns="http://www.w3.org/2000/svg"
   xml:space="preserve"
