@@ -5,7 +5,11 @@ import adapter from '@sveltejs/adapter-cloudflare'
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			routes: {
+				exclude: ['/*']
+			}
+		}),
 		prerender:{
 			handleHttpError:(msg)=>{
 				console.log('MMM',msg);
