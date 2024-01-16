@@ -71,7 +71,11 @@
 			return book;
 		});
 	}
-
+	let toolTipHTML = "TOOLTIP"
+	function toolTip(ev, book){
+		console.log(ev,book);
+		toolTipHTML = `<p>${book.title}&nbsp;&mdash; ${book.authors[0]} ${book.authors[1]?`+${book.authors.length-1}`:''}</p>`
+	}
 </script>
 
 {#if title != ''}<h1>{title}</h1>{/if}
@@ -83,7 +87,7 @@
 					<!-- <text dy="-5">{entry[1].key}</text> -->
 					{#each entry[1].books as book}
 						{#if !book.ignore}
-							<g transform="translate({book.x},{book.y})">
+							<g transform="translate({book.x},{book.y})" on:mousemove={(ev)=>toolTip(ev,book)}>
 								<Book width={book.width} height={book.height} rating={book.rating} />
 							</g>
 						{/if}
@@ -94,25 +98,34 @@
 			{/each}
 		</g>
 	</svg>
-	<div class="tooltip">TOOLTIP!</div>
+	<div class="tooltip">{@html toolTipHTML}</div>
 </div>
 
 <style>
 	.chart {
 		width: 100%;
+		padding-bottom: 3lh;	
+		position: relative;
 	}
+
 	.stack {
 		font-family: sans-serif;
 		font-weight: bold;
 		fill: none;
 		stroke: black;
 	}
+
 	.stack-title{
 		fill:black;
 		font-size: 14px;
 	}
-	.chart{
-		padding-bottom: 3lh;	
+
+	.tooltip{
+		background-color: var(--field);
+		max-width:10lh;
+		position: absolute;
+		top:0;
 	}
+
 
 </style>
