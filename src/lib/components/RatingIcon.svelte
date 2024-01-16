@@ -39,6 +39,6 @@
   </svg>
   <style>
     svg{
-      width:1.5lh;
+      width:100%;
     }
   </style>

@@ -30,9 +30,21 @@
 
 <style>
 	li{
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 15fr;
+		line-height: 1.5lh;
 	}
 	.details, .icon{
 		display: inline-block;
+	}
+	.icon{
+		width:1.5rem;
+	}
+	a{max-width:50%}
+	ul a{
+		color: var(--text);
+	}
+	ul a:hover{
+		color: var(--field);
 	}
 </style>
