@@ -24,6 +24,8 @@
   <li>More photographs</li>
   <li>Collection pages</li>
   <li>Use seeded random number for the stack layout to stop it redrawing when the JS gets loaded</li>
+  <li>Publishing year timeline</li>
+  <li>List on the author pages should look the sameas the on in the index page</li>
 </ul>
 <style>
   ul.bulleted{

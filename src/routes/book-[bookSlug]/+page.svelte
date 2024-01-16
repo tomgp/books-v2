@@ -9,9 +9,7 @@
 <h1>{overViewData.title}&nbsp;({overViewData.published})</h1>
 
 <div class="start-grid">
-	{#if overViewData.image}
-	<img src={overViewData.image} alt="" role="presentation">
-	{/if}
+	<img src={overViewData.image?overViewData.image:"images/book-place-holder.svg"} alt="" role="presentation">
 	<div>
 	<p>
 	By 
@@ -22,7 +20,14 @@
 	</p>
 	<p>{overViewData['non-fiction'] ? "Non fiction":"Fiction"}</p>
 	<p><RatingMeter rating={overViewData.rating}></RatingMeter></p>
+	{#if data.links.length > 0}
 	<h2>links</h2>
+	{#each data.links as link}
+		<p>
+			<a href="{link.url}">{link.title}</a> {link.extract}
+		</p>
+	{/each}
+	{/if}
 	</div>
 </div>
 <h2>Notes</h2>

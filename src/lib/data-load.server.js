@@ -10,6 +10,11 @@ export function loadReadingList() {
 	return csvParse(list, rowParser);
 }
 
+export function loadLinks(){
+	const links = fs.readFileSync('static/data/links.csv', 'utf-8');
+	return csvParse(links);
+}
+
 export function rowParser(row) {
 	row.authors = row.authors.split(',').map((a) => a.trim());
 	return row;
