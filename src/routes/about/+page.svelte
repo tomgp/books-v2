@@ -19,13 +19,17 @@
 </ul>
 <h2>Todo... </h2>
 <ul class="bulleted">
+  <li>Booklist should be split into years and months</li>
+  <li>Make book list filterable</li>
   <li>Add notes and reviews that I've written elsewhere if I can find them</li>
-  <li>Add external links for books nd authors</li>
+  <li>Add external links for books and authors</li>
   <li>More photographs</li>
   <li>Collection pages</li>
   <li>Use seeded random number for the stack layout to stop it redrawing when the JS gets loaded</li>
   <li>Publishing year timeline</li>
-  <li>List on the author pages should look the sameas the on in the index page</li>
+  <li>Book list on the author pages should look the same as the one on the index page</li>
+  <li>RSS feed</li>
+  <li>Use SQLite databse instead of a CSV file?</li>
 </ul>
 <style>
   ul.bulleted{
