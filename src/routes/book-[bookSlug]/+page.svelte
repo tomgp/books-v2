@@ -18,7 +18,7 @@
 	{/each}
 	{#if overViewData.translator}. Translated by {overViewData.translator}{/if}
 	</p>
-	<p>{overViewData['non-fiction'] ? "Non fiction":"Fiction"}</p>
+	<p>{overViewData.pages}pp, {overViewData['non-fiction'] ? "Non fiction":"Fiction"}</p>
 	<p><RatingMeter rating={overViewData.rating}></RatingMeter></p>
 	{#if data.links.length > 0}
 	<h2>links</h2>
@@ -32,7 +32,7 @@
 </div>
 <h2>Notes</h2>
 {#each data.content as readThrough}
-	<p>Read on {readThrough.data.date}</p>
+	<p>{readThrough.data.date}</p>
 	{@html marked.parse(readThrough.markdown)}
 {/each}
 
@@ -40,7 +40,7 @@
 	.start-grid{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
-		border-bottom: 1px solid black;
+
 	}
 	img{
 		width:100%;

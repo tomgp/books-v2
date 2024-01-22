@@ -45,7 +45,7 @@
 	}
 	ul a{
 		text-decoration: none;
-		color: var(--text);
+		/* color: var(--text); */
 	}
 	ul a:hover{
 		color: var(--field);
