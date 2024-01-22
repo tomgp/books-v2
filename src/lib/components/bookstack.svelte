@@ -77,7 +77,7 @@
 	function toolTip(ev, book){
 		toolTipActive = true;
 		toolTipHTML = `<p>${book.title}&nbsp;&mdash; ${book.authors[0]} ${book.authors[1]?`+${book.authors.length-1}`:''}</p>`
-		console.log(ev);
+
 		tipPos= {x:ev.layerX, y:ev.layerY}
 	}
 

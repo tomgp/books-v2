@@ -12,7 +12,7 @@ const config = {
 		}),
 		prerender:{
 			handleHttpError:(msg)=>{
-				console.log('MMM',msg);
+				console.log('ERROR',msg);
 			}
 		}
 	}
