@@ -1,6 +1,7 @@
 <h1>About</h1>
 <p>As of January 2024 this website is a work in progress</p>
-<p>My old books page can be found <a href="https://www.toffeemilkshake.co.uk/books">here</a> but I'll not be updating it</p>
+<p>Notes about books are not well thouyght out opinions but just whatever I've put in my notes app whilst reading with asome light editing to join them together.</p>
+<p>My old books page can be found <a href="https://www.toffeemilkshake.co.uk/books">here</a> but I'll not be updating it.</p>
 <h2>Aims</h2>
 <ul class="bulleted">
   <li>More colorful than the old page</li>
