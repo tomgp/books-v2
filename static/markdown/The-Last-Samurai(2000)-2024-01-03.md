@@ -14,7 +14,7 @@
 }
 ---
 
-Justs really good. More open ended than [Lightning Rods](book-Lightning-Rods(2011)) and less funny but much more affecting. Taps the same vein of millenial maximalism as e.g. Infinite Jest but is much better than that (re Infinite Jest: my enjoyment of which I'm increasingly coming to believe was a kind of literarary Stockholm syndrome). DeWitt is really good at the kind of telling details that I respond to; highly specific stuff about computers, card games, London transport and fast food establishments. When I'm allowing myself to buy books again I'll be getting hold of the rest of her oeuvre.
+Really good. More open ended than [Lightning Rods](book-Lightning-Rods(2011)) and less funny but much more affecting. Taps the same vein of millenial maximalism as e.g. Infinite Jest but is much better than that (re Infinite Jest: my enjoyment of which I'm increasingly coming to believe was a kind of literarary Stockholm syndrome). DeWitt is really good at the kind of telling details that I respond to; highly specific stuff about computers, card games, London transport and fast food establishments. When I'm allowing myself to buy books again I'll be getting hold of the rest of her oeuvre.
 
 In the meantime I enjoyed her Bridge influenced short story [The Sexual Codes OF The Europeans](https://evergreenreview.com/read/sexual-codes-of-the-europeans/). It starts perfectly with just the sort of specific detail I was just talking about ...
 
