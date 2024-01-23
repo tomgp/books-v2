@@ -13,6 +13,10 @@
   </footer>
 </div>
 <style>
+  /* debug */
+  /* :global(*){
+    border: 1px solid red;
+  } */
   :root{
     --text: black;
     --highlight: rgb(165, 22, 22);
@@ -21,7 +25,6 @@
   }
   nav{
     display: flex;
-    width: 100%;
     max-width: 640px;
     padding-left:1lh;
     padding-right:1lh;
@@ -32,8 +35,7 @@
     color: var(--text, black);
     background-color: var(--field, white);
     font-size: 16px;
-    font-family: sans-serif;
-    font-family: Newsreader,serif;
+    font-family: Newsreader, serif;
     padding: 0;
     margin: 0;
   }
@@ -49,7 +51,7 @@
   }
 
   :global(h1,h2,h3){
-    font-family: Newsreader,serif;
+    font-family: Newsreader, serif;
   }
   :global(ul){
     padding: 0;
@@ -83,7 +85,6 @@ background: linear-gradient(270deg, rgba(250,74,74,1) 0%, rgba(250,145,103,1) 14
   }
 
   main{
-   width: 100%;
     max-width: 640px;
     background-color: var(--field);
     padding-left:1lh;
