@@ -13,4 +13,4 @@
  "image": ""
 }
 ---
-
+Ann Quin shorts and unfinished fragments that I bought solely on the strength of the cover upon which my mother’s friend was quoted prominently. Inevitably, and as I expected it was a mixed bag but the high points were good enough I plan to read Berg sometime soon.

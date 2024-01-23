@@ -14,7 +14,7 @@
 }
 ---
 
-Back from a week in Wales. Some great mountain biking, Brass:Birmingham playing and walking along refreshingly drizzly beaches. I read a couple of Jarett Kobek books, the commercial flop ‘The Future Won’t Be Long’ and his most recent ‘Only Americans Burn in Hell’ I really enjoyed the former, the latter was good too but a kind of lesser ‘I Hate The Internet’ in some ways. I’m really looking forward to his ODB book. [Jan 2024, 5 years on No ODB book has been released]
+I read a couple of Jarett Kobek books, the commercial flop ‘[The Future Won’t Be Long](/book-The-Future-Won't-Be-Long(2017))’ and his most recent ‘Only Americans Burn in Hell’ I really enjoyed the former, the latter was good too but a kind of lesser ‘I Hate The Internet’ in some ways. I’m really looking forward to his ODB book. [Jan 2024, 5 years on No ODB book has been released]
 
 Kobek really gets consumer computer technology in a way that no other author I’ve read does. You know how some writers can sketch a whole believable character from some telling details about what they’re wearing or the car they drive? Kobek does that with consumer electronics e.g. from ‘ The Future…’
 
