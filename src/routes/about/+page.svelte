@@ -18,7 +18,7 @@
   <li><a href="https://macwright.com/reading/">Tom MacWright</a> (so many Toms)</li>
 </ul>
 <h2>Colophon</h2>
-<p>This site was built using <a href="https://kit.svelte.dev/">Sveltekit</a> and a bit of <a href="https://d3js.org/">D3</a> deployed as a collection of static HTML/CSS/JS files (as god intended) on Cloudflare pages, it uses the free <a href="https://www.productiontype.com/news/new_fonts_from_production_type_newsreader">Newsreader font</a>, sets no cookies and collects no data.</p>
+<p>This site was built using <a href="https://kit.svelte.dev/">Sveltekit</a> and a bit of <a href="https://d3js.org/">D3</a> deployed as a collection of static HTML/CSS/JS files (as god intended) on Cloudflare pages, it uses the free <a href="https://www.productiontype.com/news/new_fonts_from_production_type_newsreader">Newsreader font</a>, sets no cookies and collects no data. The source code and data are available on <a href="https://github.com/tomgp/books-v2">github</a></p>
 <h2>Todo list</h2>
 <ul class="bulleted">
   <li>Booklist should be split into years and months ✔️</li>
