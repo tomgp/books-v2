@@ -14,3 +14,4 @@
 }
 ---
 
+Jeanette Winterson’s _Daylight Gate_ revolving around the Pendle witch trials is a short sharp novel which lives up to the promise of the publisher and erstwhile film studio Hammer. Un-showy kitchen sink realism garnished with bloody torture and a sprinkle of the supernatural to good if limited effect. The books real strength is in its portrayal of its characters relationships.
