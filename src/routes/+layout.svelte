@@ -2,10 +2,8 @@
   import { page } from '$app/stores';
   let data = $page.data;
 </script>
-<nav><a href="/"><strong>books</strong> index</a>, <a href="about">about</a></nav>
 <div class="alignment">
-
-
+  <nav><span><a href="/"><strong>books</strong> index</a>, <a href="about">about</a></span></nav>
   <main>
   <slot />
   </main>
@@ -22,8 +20,12 @@
     --accent:rgb(61, 206, 172);
   }
   nav{
-    width:100%;
-    background-color: var(--text);
+    display: flex;
+    width: 100%;
+    max-width: 640px;
+    padding-left:1lh;
+    padding-right:1lh;
+    justify-items: center;
   }
   
   :global(body){
@@ -56,18 +58,23 @@
   }
 
   .alignment{
+    background: rgb(250,74,74);
+background: linear-gradient(270deg, rgba(250,74,74,1) 0%, rgba(250,145,103,1) 14%, rgba(250,210,74,1) 27%, rgba(255,252,241,0) 37%, rgba(255,255,255,0) 69%, rgba(253,187,45,1) 79%, rgba(106,201,91,1) 89%, rgba(34,193,195,1) 100%); 
     display: flex;
     flex-direction: column;
     align-items:center;
+    min-height: 100vh;
   }
   nav a{
     font-style: italic;
-    color: var(--accent);
   }
 
   nav a:hover{
     color: var(--text);
     background-color: var(--accent);
+  }
+  nav span{
+    background-color: var(--field);
   }
 
 
@@ -76,10 +83,11 @@
   }
 
   main{
-    width: 100%;
+   width: 100%;
     max-width: 640px;
-    padding: 2lh;
     background-color: var(--field);
+    padding-left:1lh;
+    padding-right:1lh; 
   }
   footer, nav{
     /* max-width:800px; */

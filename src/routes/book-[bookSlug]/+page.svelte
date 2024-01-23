@@ -44,9 +44,9 @@
 	}
 	img{
 		width:100%;
-		margin-left: -2lh;
-		margin-bottom: -1px;
+		margin-left: -1lh;
 		filter: drop-shadow(0px 0px 10px 10px rgba(0,0,0,0.55));
 		clip: rect(0,0,0,0);
+		background-color: var(--field);
 	}
 </style>
