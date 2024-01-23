@@ -14,4 +14,4 @@
 }
 ---
 
-Read whilst suffering from gastro-entritis, it was easy and entertaining whilst it lasted. I enjoyed that a small part of it was set in Kilburn.
+Read whilst in bed suffering from gastro-entritis, it was easy and entertaining whilst it lasted. I enjoyed that a small part of it was set in Kilburn.
