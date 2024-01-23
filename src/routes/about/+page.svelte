@@ -18,7 +18,7 @@
 </ul>
 <h2>Todo... </h2>
 <ul class="bulleted">
-  <li>Booklist should be split into years and months</li>
+  <li>Booklist should be split into years and months ✔️</li>
   <li>Make book list filterable</li>
   <li>Add notes and reviews that I've written elsewhere if I can find them</li>
   <li>Add external links for books and authors</li>
