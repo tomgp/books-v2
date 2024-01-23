@@ -14,3 +14,4 @@
 }
 ---
 
+Also, I’m only half way though, but the most recent Alison Bechdel book The Secret to Superhuman Strength is fantastic. Wierdly, a reading exprience most similar to watching a prime era Jonathan Meades documentary.

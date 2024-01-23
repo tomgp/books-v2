@@ -14,3 +14,4 @@
 }
 ---
 
+I enjoyed the pictures more than the words (which tended towards exposition heavy dialogue)

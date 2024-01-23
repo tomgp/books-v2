@@ -14,3 +14,4 @@
 }
 ---
 
+’d seen the cartoon in the 90s but has only poor recollection of it. The comic is tragic but what struck me most is way Briggs nails the the dialogue so completely. There’s lot of resonance for any one who’s spent the year listening to jingoistic politicians trying to sound authoritative whilst they mangle the communication of half understood scientific advice.
