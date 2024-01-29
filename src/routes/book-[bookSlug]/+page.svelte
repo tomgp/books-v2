@@ -5,7 +5,9 @@
 	export let data;
 	let overViewData = data ? data.content[0].data : {};
 </script>
-
+<svelte:head>
+  <title>Tom's books stack - {overViewData.title}</title>
+</svelte:head>
 <h1>{overViewData.title}&nbsp;({overViewData.published})</h1>
 
 <div class="start-grid">
@@ -45,8 +47,7 @@
 	img{
 		width:100%;
 		margin-left: -1lh;
-		filter: drop-shadow(0px 0px 10px 10px rgba(0,0,0,0.55));
-		clip: rect(0,0,0,0);
-		background-color: var(--field);
+		/* background-color: var(--field); */
+		filter: drop-shadow(5px -5px 10px rgba(0,0,0,1));
 	}
 </style>

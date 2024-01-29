@@ -61,7 +61,16 @@
 
   .alignment{
     background: rgb(250,74,74);
-background: linear-gradient(270deg, rgba(250,74,74,1) 0%, rgba(250,145,103,1) 14%, rgba(250,210,74,1) 27%, rgba(255,252,241,0) 37%, rgba(255,255,255,0) 69%, rgba(253,187,45,1) 79%, rgba(106,201,91,1) 89%, rgba(34,193,195,1) 100%); 
+background: linear-gradient(
+  270deg, 
+  rgba(250,74,74,1) 0%,
+  rgba(250,145,103,1) 15%,
+  rgba(250,210,74,1) 30%,
+  rgba(255,255,255,0) 40%,
+  rgba(255,255,255,0) 60%,
+  rgba(253,187,45,1) 70%,
+  rgba(106,201,91,1) 85%,
+  rgba(34,193,195,1) 100%); 
     display: flex;
     flex-direction: column;
     align-items:center;

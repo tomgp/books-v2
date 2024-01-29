@@ -28,7 +28,9 @@
     return year;
 	}).filter(d=>d.key!='0');
 </script>
-
+<svelte:head>
+  <title>Tom's books stack</title>
+</svelte:head>
 <Bookstack splitOnKey={(book) => String(book.date).split('-')[0]} books={currentList} />
 	{#each Object.entries(structuredData).reverse() as [index, year]}
 	<div class="year-head">
