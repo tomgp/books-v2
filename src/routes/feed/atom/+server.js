@@ -16,8 +16,8 @@ function feed(posts){
   <title>Tom's book stack</title>
     <subtitle>Books I've read and my notes on them</subtitle>
     <link href="${rootURL}" />
-    <link rel="self" href="${rootURL}/feed"/>
-    <updated>${posts[0].date}Z</updated>
+    <link rel="self" href="${rootURL}/feed/atom"/>
+    <updated>${posts[0].date}T00:00:00Z</updated>
     <category term="books"/>
     <category term="personal"/>
     <category term="notes"/>
@@ -43,12 +43,3 @@ function entries(posts){
     </content>
   </entry>`).join('\n');
 }
-/*
-  `<item>
-    <title>${post.title}</title>
-    <link>${rootURL}/${bookSlug(post)}</link>
-    <guid>${rootURL}/${bookSlug(post)}</guid>
-    <pubDate>${RFC822Date(post.date)}</pubDate>
-    <content><![CDATA[ <p>${post.title} by ${post.authors.join(' ')}. ${post['non-fiction']?'Non fiction':'Fiction'}, first published ${post.published}. <a href="${rootURL}/${bookSlug(post)}">Notes</a></p> ]]></content>
-  </item>`).join('\n');
-*/
