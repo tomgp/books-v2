@@ -11,7 +11,7 @@
 <h1>{overViewData.title}&nbsp;({overViewData.published})</h1>
 
 <div class="start-grid">
-	<img src={overViewData.image?overViewData.image:"images/book-place-holder.svg"} alt="" role="presentation">
+	<img class:photo={overViewData.image} src={overViewData.image?overViewData.image:"images/book-place-holder.svg"} alt="" role="presentation">
 	<div>
 	<p>
 	By 
@@ -47,7 +47,8 @@
 	img{
 		width:100%;
 		margin-left: -1lh;
-		/* background-color: var(--field); */
+	}
+	img.photo{
 		filter: drop-shadow(5px -5px 10px rgba(0,0,0,1));
 	}
 </style>
