@@ -1,6 +1,6 @@
 <h1>About</h1>
 <p>As of January 2024 this website is a work in progress</p>
-<p>Notes about books are not well thought out opinions but just whatever I've put in my notes app whilst reading with some light editing to join them together. I'm bad at spelling and make lots of typos, sorry about that.</p>
+<p>Notes about books are not well thought out opinions but just whatever random thoughts I've put in my notes app whilst reading with some light editing to join them together. I'm bad at spelling and make lots of typos, sorry about that.</p>
 <p>My old books page can be found <a href="https://www.toffeemilkshake.co.uk/books">here</a> but I'll not be updating it.</p>
 <h2>Initial aims</h2>
 <ul class="bulleted">
