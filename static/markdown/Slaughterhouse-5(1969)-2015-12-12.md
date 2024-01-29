@@ -10,7 +10,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "1969",
- "image": ""
+ "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/e6ed173e-fe8c-4350-1a2b-f10c54fa2c00/bookshot"
 }
 ---
 
