@@ -27,7 +27,7 @@ function feed(posts){
     <author>
       <name>Tom Pearson</name>
     </author>
-    <id>${rootURL}</id>
+    <id>${rootURL}/</id>
     ${entries(posts)}
   </feed>`;
 }
