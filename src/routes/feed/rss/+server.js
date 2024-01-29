@@ -1,5 +1,6 @@
 import { loadReadingList } from '$lib/data-load.server.js';
 import { bookSlug } from '$lib/slugger.js';
+export const prerender = true;
 
 let rootURL = "https://books.toffeemilkshake.co.uk";
 let feedLength = 20;
