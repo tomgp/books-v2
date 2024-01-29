@@ -2,8 +2,11 @@
   import { page } from '$app/stores';
   let data = $page.data;
 </script>
+<svelte:head>
+  <link rel="alternate" type="application/atom+xml" href="/feed" title="Tom's book stack">
+</svelte:head>
 <div class="alignment">
-  <nav><span><a href="/"><strong>books</strong> index</a>, <a href="about">about</a></span></nav>
+  <nav><span><a href="/"><strong>books</strong> index</a>, <a href="about">about</a>, <a href="feed">feed</a> </span></nav>
   <main>
   <slot />
   </main>
