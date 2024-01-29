@@ -1,12 +1,18 @@
 <script>
+	import { page } from '$app/stores';
 	import * as marked from 'marked';
 	import { authorSlug } from '$lib/slugger.js';
 	import RatingMeter from '$lib/components/RatingMeter.svelte';
 	export let data;
 	let overViewData = data ? data.content[0].data : {};
+	console.log($page);
 </script>
 <svelte:head>
   <title>Tom's books stack - {overViewData.title}</title>
+	<meta property="og:title" content="Tom's books stack - {overViewData.title}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{$page.url.href}" />
+	<meta property="og:image" content="{overViewData.image ? overViewData.image.replace("bookshot","socialfacebook"): $page.url.origin+'/images/social-placeholder.png'}" />
 </svelte:head>
 <h1>{overViewData.title}&nbsp;({overViewData.published})</h1>
 
