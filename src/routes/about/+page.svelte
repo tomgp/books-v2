@@ -31,7 +31,7 @@
   <li>Use seeded random number for the stack layout to stop it redrawing when the JS gets loaded</li>
   <li>Publishing year timeline</li>
   <li>Book list on the author pages should look the same as the one on the index page</li>
-  <li>RSS feed</li>
+  <li>RSS feed ✔️</li>
   <li>Use SQLite databse instead of a CSV file?</li>
 </ul>
 <style>
