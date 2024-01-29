@@ -5,7 +5,6 @@
 	import RatingMeter from '$lib/components/RatingMeter.svelte';
 	export let data;
 	let overViewData = data ? data.content[0].data : {};
-	console.log($page);
 </script>
 <svelte:head>
   <title>Tom's books stack - {overViewData.title}</title>
