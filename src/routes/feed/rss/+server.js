@@ -20,7 +20,7 @@ function feed(posts){
      <channel>
         <title>Tom's book stack</title>
         <link>${rootURL}</link>
-        <description>Notes and books I've read</description>
+        <description>Books I've read and my notes on them</description>
         <language>en-gb</language>
         <pubDate>${RFC822Date(posts[0].date)}</pubDate>
         <lastBuildDate>${RFC822Date(posts[0].date)}</lastBuildDate>
