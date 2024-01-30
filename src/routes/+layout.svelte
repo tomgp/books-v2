@@ -7,7 +7,7 @@
 </svelte:head>
 <div class="alignment">
   <nav><span><a href="/"><strong>books</strong> index</a>, <a href="about">about</a>, <a href="feed/atom">feed</a> </span></nav>
-  <main>
+  <main data-sveltekit-reload>
   <slot />
   </main>
   <footer>
