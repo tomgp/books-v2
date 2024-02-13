@@ -33,8 +33,8 @@ function entries(posts){
   return posts.map(post => 
   `<item>
     <title>${post.title}</title>
-    <link>${rootURL}/${bookSlug(post)}</link>
-    <guid>${rootURL}/${bookSlug(post)}</guid>
+    <link>${rootURL}/book-${bookSlug(post)}</link>
+    <guid>${rootURL}/book-${bookSlug(post)}</guid>
     <pubDate>${RFC822Date(post.date)}</pubDate>
     <content><![CDATA[ <p>${post.title} by ${post.authors.join(' ')}. ${post['non-fiction']?'Non fiction':'Fiction'}, first published ${post.published}. <a href="${rootURL}/${bookSlug(post)}">Notes</a></p> ]]></content>
   </item>`).join('\n');
