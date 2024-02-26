@@ -8,6 +8,7 @@ function parseBookData(d){
 	d['re-read'] = d['re-read']=='TRUE';
 	d.pages = Number(d.pages);
 	d.published= Number(d.published);
+	d.tags = d.tags ? d.tags.split(",") : [];
 	return d;
 }
 

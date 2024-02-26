@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import * as marked from 'marked';
 	import { authorSlug } from '$lib/slugger.js';
-	import RatingMeter from '$lib/components/RatingMeter.svelte';
 	export let data;
 
 </script>
@@ -13,16 +12,16 @@
 	<meta property="og:url" content={$page.url.href} />
 	<meta property="og:image" content={$page.url.origin+'/images/social-placeholder.png'} />
 </svelte:head>
-<h1>Theme {data.content.tag}</h1>
-
+<h1>{data.content.tag}</h1>
 <div class="start-grid">
+	<div class="book-cluster"></div>
 	<pre>
 		{JSON.stringify(data,null,' ')}
 	</pre>
 </div>
 <h2>Notes</h2>
 {#each data.content as readThrough}
-	<p>{readThrough.data.date}</p>
+	<h3>{readThrough.data.title} {readThrough.data.date}</h3>
 	{@html marked.parse(readThrough.markdown)}
 {/each}
 

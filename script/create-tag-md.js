@@ -36,8 +36,6 @@ const slugList = {};
 
 fs.writeFileSync(path.join(dataDir, 'tagIndex.json'), JSON.stringify(tagList, null, ' ')); //a index of tags and associated "reads"
 
-console.log(tagList);
-
 // bookList.forEach((book, i) => {
 // 	const fileName = `${readSlug(book)}.md`;
 // 	if (!slugList[bookSlug(book)]) {
