@@ -1,37 +1,19 @@
 import * as fs from 'fs';
+import { getMD } from '$lib/get-md.server.js';
 import {csvParse} from 'd3';
 
-function parseBookData(d){
-	d.authors=d.authors.split(',').map(a=>a.trim());
-	d.editors=d.editors.split(',').map(a=>a.trim());
-	d['non-fiction'] = d['non-fiction']=='TRUE';
-	d['comic'] = d['comic']=='TRUE';
-	d['re-read'] = d['re-read']=='TRUE';
-	d.pages = Number(d.pages);
-	d.published= Number(d.published);
-	return d;
-}
 
 export async function load({ params }) {
-	const index = JSON.parse(fs.readFileSync('static/data/readIndex.json', 'utf-8'));
-	const links = csvParse(fs.readFileSync('static/data/links.csv', 'utf-8'))
-		.filter(link=>link.bookslug == params.bookSlug);
-	const reads = index[params.bookSlug];
-	const content = [];
+	const index = JSON.parse(fs.readFileSync('static/data/tagIndex.json', 'utf-8'));
+	let content = [];
+	index[params.themeSlug].readSlugs.forEach(readSlug => {
+		let readData = getMD(`static/markdown/${readSlug}.md`);
+		content.push(readData);
+	});
 
-	if(reads){
-		reads.forEach((datedBookSlug) => {
-			const md = fs.readFileSync(`static/markdown/${datedBookSlug}.md`, 'utf-8');
-			const parts = md.split('---');
-			content.push({
-				markdown: parts[1],
-				data: parseBookData(JSON.parse(parts[0]))
-			});
-		});
-	}
 	return {
-		slug: params.bookSlug,
+		slug: params.themeSlug,
+		books:[],
 		content: content,
-		links
 	};
 }

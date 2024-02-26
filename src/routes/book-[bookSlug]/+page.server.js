@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import {csvParse} from 'd3';
+import { getMD } from '../../lib/get-md.server.js';
 
 function parseBookData(d){
 	d.authors=d.authors.split(',').map(a=>a.trim());
@@ -21,12 +22,9 @@ export async function load({ params }) {
 
 	if(reads){
 		reads.forEach((datedBookSlug) => {
-			const md = fs.readFileSync(`static/markdown/${datedBookSlug}.md`, 'utf-8');
-			const parts = md.split('---');
-			content.push({
-				markdown: parts[1],
-				data: parseBookData(JSON.parse(parts[0]))
-			});
+			let file = `static/markdown/${datedBookSlug}.md`;
+			let readData = getMD(file);
+			content.push(readData);
 		});
 	}
 	return {
