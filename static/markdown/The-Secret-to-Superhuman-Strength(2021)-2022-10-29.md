@@ -10,7 +10,8 @@
  "non-fiction": "TRUE",
  "comic": "TRUE",
  "published": "2021",
- "image": ""
+ "image": "",
+ "tags":"memoir,gay"
 }
 ---
 

@@ -5,8 +5,9 @@
 	"scripts": {
 		"dev": "vite dev",
 		"host": "vite dev --host",
-		"scaffold-books": "node ./script/create-book-md.js",
-		"scaffold-tags": "node ./script/create-tag-md.js",
+		"scaffold:books": "node ./script/create-book-md.js",
+		"scaffold:tags": "node ./script/create-tag-md.js",
+		"scaffold": "npm run scaffold:books && npm run scaffold:tags",
 		"prebuild": "echo 'pre build'",
 		"build": "vite build",
 		"preview": "vite preview",
