@@ -1,0 +1,16 @@
+{
+ "dungeon": {
+  "tag": "dungeon",
+  "count": 3,
+  "bookSlugs": [
+   "The-Tombs-of-Atuan(1971)",
+   "Top-10-Games-You-Can-Play-In-Your-Head-By-Yourself(2019)",
+   "Mazes(2022)"
+  ],
+  "readSlugs": [
+   "The-Tombs-of-Atuan(1971)-2019-02-15",
+   "Top-10-Games-You-Can-Play-In-Your-Head-By-Yourself(2019)-2019-11-21",
+   "Mazes(2022)-2024-02-07"
+  ]
+ }
+}

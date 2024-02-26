@@ -1,10 +1,16 @@
 <script>
 	import { page } from '$app/stores';
 	import * as marked from 'marked';
-	import { authorSlug } from '$lib/slugger.js';
+	import { authorSlug, tagSlug } from '$lib/slugger.js';
 	import RatingMeter from '$lib/components/RatingMeter.svelte';
 	export let data;
 	let overViewData = data ? data.content[0].data : {};
+
+	let tagCollection = [];
+	
+	data.content.forEach((d)=>{
+		tagCollection = [...tagCollection, ...d.data.tags]
+	});
 </script>
 <svelte:head>
   <title>Tom's books stack - {overViewData.title}</title>
@@ -42,7 +48,10 @@
 	<p>{readThrough.data.date}</p>
 	{@html marked.parse(readThrough.markdown)}
 {/each}
-
+<h2>groups</h2>
+{#each tagCollection as t}
+<a href="theme-{tagSlug(t)}">{t}</a>
+{/each}
 <style>
 	.start-grid{
 		display:grid;

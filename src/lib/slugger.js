@@ -13,3 +13,7 @@ export function bookSlug(book) {
 export function authorSlug(author) {
 	return slugify(author, { remove: /[:\!\?;,\.\#*&%\\"\\\/]/g });
 }
+
+export function tagSlug(tag){
+	return slugify(tag.trim(), { remove: /[:\!\?;,\.\#*&%\\"\\\/]/g });
+}
