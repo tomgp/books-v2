@@ -14,7 +14,6 @@ export async function load({ params }) {
 			let file = `static/markdown/${datedBookSlug}.md`;
 			let readData = getMD(file);
 			content.push(readData);
-			console.log('---',readData.data.tags)
 		});
 	}
 	return {
