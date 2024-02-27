@@ -11,7 +11,12 @@
   <slot />
   </main>
   <footer>
-    All text and photographs are &#169; <a href="https://www.toffeemilkshake.co.uk">Tom Pearson 2009-2024</a> unless otherwise noted
+    <p>
+    All text and photographs are &#169; <a href="https://www.toffeemilkshake.co.uk">Tom Pearson 2009-2024</a> unless otherwise noted.
+    </p>
+    <p>
+      🚧 Permananetly under construction, please excuse the debris and dead ends. 🚧
+    </p>
     <!-- <pre>{JSON.stringify(data)}</pre> -->
   </footer>
 </div>
