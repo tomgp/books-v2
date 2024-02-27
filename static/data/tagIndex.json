@@ -1,4 +1,14 @@
 {
+ "grief": {
+  "tag": "grief",
+  "count": 1,
+  "bookSlugs": [
+   "A-Monster-Calls(2011)"
+  ],
+  "readSlugs": [
+   "A-Monster-Calls(2011)-2016-02-03"
+  ]
+ },
  "dungeon": {
   "tag": "dungeon",
   "count": 3,
@@ -11,6 +21,30 @@
    "The-Tombs-of-Atuan(1971)-2019-02-15",
    "Top-10-Games-You-Can-Play-In-Your-Head-By-Yourself(2019)-2019-11-21",
    "Mazes(2022)-2024-02-07"
+  ]
+ },
+ "gay": {
+  "tag": "gay",
+  "count": 2,
+  "bookSlugs": [
+   "The-Secret-to-Superhuman-Strength(2021)",
+   "The-Times-I-knew-I-was-Gay(2020)"
+  ],
+  "readSlugs": [
+   "The-Secret-to-Superhuman-Strength(2021)-2022-10-29",
+   "The-Times-I-knew-I-was-Gay(2020)-2024-02-15"
+  ]
+ },
+ "memoir": {
+  "tag": "memoir",
+  "count": 2,
+  "bookSlugs": [
+   "The-Secret-to-Superhuman-Strength(2021)",
+   "The-Times-I-knew-I-was-Gay(2020)"
+  ],
+  "readSlugs": [
+   "The-Secret-to-Superhuman-Strength(2021)-2022-10-29",
+   "The-Times-I-knew-I-was-Gay(2020)-2024-02-15"
   ]
  }
 }

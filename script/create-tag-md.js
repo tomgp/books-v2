@@ -15,6 +15,7 @@ csvParse(fs.readFileSync(path.join(dataDir, 'reading-list.csv'), 'utf-8'))
     .forEach(book => {
       book.tags.split(',')
         .forEach(tag=>{
+          console.log(tag)
           let slug = tagSlug(tag);
           if(!tagList[slug]){
             tagList[slug] = {

@@ -10,7 +10,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "2011",
- "image": "grief"
+ "tags": "grief"
 }
 ---
 This was a tough read.

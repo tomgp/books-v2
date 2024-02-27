@@ -48,11 +48,16 @@
 	<p>{readThrough.data.date}</p>
 	{@html marked.parse(readThrough.markdown)}
 {/each}
-<!-- <h2>groups</h2>
+<div class="hidden">
+	<h2>groups</h2>
 {#each tagCollection as t}
 <a href="theme-{tagSlug(t)}">{t}</a>
-{/each} -->
+{/each}
+</div>
 <style>
+	.hidden{
+		display: none;
+	}
 	.start-grid{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
