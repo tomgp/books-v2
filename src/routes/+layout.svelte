@@ -6,8 +6,8 @@
   <link rel="alternate" type="application/atom+xml" href="/feed/atom" title="Tom's book stack">
 </svelte:head>
 <div class="alignment">
-  <nav><span><a href="/"><strong>books</strong> index</a>, <a href="about">about</a>, <a href="feed/atom">feed</a> </span></nav>
   <main data-sveltekit-reload>
+  <nav><span><a href="/"><strong>books</strong> index</a>, <a href="about">about</a>, <a href="feed/atom">feed</a> </span></nav>
   <slot />
   </main>
   <footer>
@@ -28,15 +28,14 @@
   :root{
     --text: black;
     --highlight: rgb(165, 22, 22);
-    --field:rgb(252, 245, 231);
+    --field:rgb(255, 255, 255);
     --accent:rgb(61, 206, 172);
   }
   nav{
     display: flex;
-    max-width: 640px;
-    padding-left:1lh;
+    width:100%;
     padding-right:1lh;
-    justify-items: center;
+    padding-top: 1lh;
   }
   
   :global(body){
@@ -68,8 +67,8 @@
   }
 
   .alignment{
-    background: rgb(250,74,74);
-background: linear-gradient(
+    background: rgb(255, 255, 255);
+/* background: linear-gradient(
   270deg, 
   rgba(250,74,74,1) 0%,
   rgba(250,145,103,1) 15%,
@@ -78,7 +77,7 @@ background: linear-gradient(
   rgba(255,255,255,0) 60%,
   rgba(253,187,45,1) 70%,
   rgba(106,201,91,1) 85%,
-  rgba(34,193,195,1) 100%); 
+  rgba(34,193,195,1) 100%);  */
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -107,8 +106,12 @@ background: linear-gradient(
     padding-left:1lh;
     padding-right:1lh; 
   }
-  footer, nav{
-    /* max-width:800px; */
+  footer{
+    width:100%;
+    max-width: 640px;
     padding: 2lh;
+    padding-left:1lh;
+    padding-right:1lh; 
   }
+
 </style>
