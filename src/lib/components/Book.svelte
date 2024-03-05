@@ -16,7 +16,7 @@
 		stroke: var(--field, white);
 	}
 	.book.highlight1{
-		fill:rgb(112, 112, 112);
+		fill:var(--highlight, rgb(112, 112, 112));
 	}
 	.book.highlight2{
 		fill:var(--accent,rgb(56, 255, 208));

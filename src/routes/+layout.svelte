@@ -26,11 +26,22 @@
     border: 1px solid red;
   } */
   :root{
-    --text: black;
+    --text: rgb(51, 51, 51);
     --highlight: rgb(189, 88, 0);
     --field:rgb(255, 255, 255);
     --accent:rgb(69, 243, 231);
   }
+
+  @media (prefers-color-scheme: dark) {
+    :root{
+      --primary:#62b8ff;
+      --text:rgb(255, 255, 255);
+      --field:rgb(51, 51, 51);
+      --accent: rgb(189, 88, 0);
+      --highlight:rgb(69, 243, 231);
+    }
+  }
+
   nav{
     display: flex;
     width:100%;
@@ -39,8 +50,8 @@
   }
   
   :global(body){
-    color: var(--text, black);
-    background-color: var(--field, white);
+    color: var(--text);
+    background-color: var(--field);
     font-size: 16px;
     font-family: Newsreader, serif;
     padding: 0;
@@ -53,8 +64,8 @@
 
 
   :global(a:hover){
-    color: var(--field, white);
-    background-color: var(--highlight, blue);
+    color: var(--text, black);
+    background-color: var(--accent, blue);
   }
 
   :global(h1,h2){
@@ -72,18 +83,7 @@
     margin-top: 2lh;
   }
 
-  /* :global(ul){
-    padding: 0;
-    list-style: none;
-    line-height: 0.5rem;
-  }
-
-  :global(li){
-    line-height: 1lh;
-  } */
-
   .alignment{
-    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -93,20 +93,13 @@
     font-style: italic;
   }
 
-  nav a:hover{
-    color: var(--text);
-    background-color: var(--accent);
-  }
-  nav span{
-    background-color: var(--field);
-  }
-
 
   a strong{
     font-style:normal;
   }
 
   main{
+    width:100%;
     max-width: 640px;
     background-color: var(--field);
     padding-left:1lh;

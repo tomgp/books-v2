@@ -93,6 +93,16 @@
 		line-height: 1lh;
 	}
 
+	@media (max-width: 375px) {
+		.book-item{
+			display: block;
+		}
+		.authors, .title, .pub-date{
+			/* display: block; */
+			width:100%;
+		}
+	}
+
 	.title{
 		white-space: nowrap;
 		overflow-x: hidden;

@@ -133,7 +133,6 @@
 
 	.chart {
 		width: 100%;
-		padding-bottom: 3lh;	
 		position: relative;
 	}
 
@@ -141,11 +140,12 @@
 		font-family: sans-serif;
 		font-weight: bold;
 		fill: none;
-		stroke: black;
+		stroke: var(--text, black);
 	}
 
+
 	.stack-title{
-		fill:black;
+		fill: var(--text, black);
 		font-size: 14px;
 	}
 
