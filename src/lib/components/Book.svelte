@@ -19,7 +19,7 @@
 		fill:rgb(112, 112, 112);
 	}
 	.book.highlight2{
-		fill:rgb(61, 206, 172);
+		fill:var(--accent,rgb(56, 255, 208));
 	}
 	/* .book-outline.highlight1{
 		stroke: var(--text, black);

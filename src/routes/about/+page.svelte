@@ -9,13 +9,14 @@
   <li>Allow for notes on books</li>
   <li>... and links to related webpages etc.</li>
 </ul>
-<h2>Inspirations</h2>
+<h2>Other libraries</h2>
 <ul class="bulleted">
   <li><a href="https://www.artgarfunkel.com/library.html">Art Garfunkle</a></li>
   <li><a href="https://aworkinglibrary.com/reading/">Mandy Brown</a></li>
   <li><a href="https://tomcritchlow.com/2020/04/15/library-json/">Tom Critchlow</a></li>
   <li><a href="https://maggieappleton.com/library">Maggie Appleton</a></li>
   <li><a href="https://macwright.com/reading/">Tom MacWright</a> (so many Toms)</li>
+  <li><a href="https://goblin-heart.net/library">Goblin-heart</a></li>
 </ul>
 <h2>Colophon</h2>
 <p>This site was built using <a href="https://kit.svelte.dev/">Sveltekit</a> and a bit of <a href="https://d3js.org/">D3</a> deployed as a collection of static HTML/CSS/JS files (as god intended) on Cloudflare pages, it uses the free <a href="https://www.productiontype.com/news/new_fonts_from_production_type_newsreader">Newsreader font</a>, sets no cookies and collects no data. The source code and data are available on <a href="https://github.com/tomgp/books-v2">github</a></p>

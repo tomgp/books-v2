@@ -35,26 +35,23 @@
 	{#each Object.entries(structuredData).reverse() as [index, year]}
 	<div class="year-head">
 	<h2>{year.key}</h2>
-	<p>{year.count} books {year.pageCount.toLocaleString()}pp</p>
+	<p class="month-data">{year.count} books {year.pageCount.toLocaleString()}pp</p>
 	</div>
 	{#each year.months.reverse() as month}
 	<h3 class="month-head">{monthName[Number(month.key)]}</h3>
-	<ul>
+	<ul class="book-list">
 	{#each month.data as book}
-		<li>
-
-			<span class="details">
-			<!-- {read.date} -->
-			<a href="book-{bookSlug(book)}">{book.title}</a> 
-				&mdash;
+		<li class="book-item">
+			<span class="title" title="{book.title}"><a href="book-{bookSlug(book)}">{book.title}</a></span>
+			<div class="authors" title="{book.authors.join(',')}">
 			{#each book.authors as author, ia}
-				<a href="author-{authorSlug(author)}">{author}</a>{ia == book.authors.length - 1
+			<a href="author-{authorSlug(author)}">{author}</a>{ia == book.authors.length - 1
 					? ''
 					: ', '}
 			{/each}
-			({book.published})
-			</span>
-			<div class="icon"><RatingIcon rating={book.rating} showAverage={false}></RatingIcon></div>
+			</div>
+			<span class="pub-date">({book.published})</span>
+			<span class="icon"><RatingIcon rating={book.rating} showAverage={false}></RatingIcon></span>
 		</li>
 	{/each}
 	</ul>
@@ -66,28 +63,50 @@
 	.year-head{
 		border-bottom: 1px solid var(--text);
 	}
-	.month-head{
-		font-weight: 100;
-		font-size: 1rem;
-		/* margin-left: 2rem; */
-	}
-	li{
-		/* display: grid;
-		grid-template-columns: 15fr 1fr; */
-		margin-bottom: 0.6lh;
+
+	.icon{
+		display: inline-flex;
 	}
 
-	.details, .icon{
-		display: inline-block;
-	}
 	.icon{
 		width:1.5rem;
 	}
+
 	ul a{
 		text-decoration: none;
-		/* color: var(--text); */
 	}
+
 	ul a:hover{
 		color: var(--field);
+	}
+
+	ul.book-list{
+		margin-left:0px;
+		padding-left:0px;
+		list-style: none;
+	}
+
+	.book-item{
+		display:grid;
+		grid-template-columns: 3fr 1.5fr 0.5fr 0.2fr;
+		gap:3px;
+		line-height: 1lh;
+	}
+
+	.title{
+		white-space: nowrap;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+	}
+	.authors{
+		display: inline-block;
+		white-space: nowrap;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+	}
+
+	p.month-data{
+		margin-bottom: 0.5lh;
+		margin-top:0.8lh;
 	}
 </style>
