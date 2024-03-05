@@ -32,4 +32,4 @@ Also, Shehan Karunatilaka absolutely nails the ending. Spoilers?: There were a c
 
 This book has been put in the "magical realism" marketing category but I don't think it belongs there really. Mainly I think this because I really enjoyed it but aslo because the approach to the "magical" part has more in common with sci-fi /fatasy than the alegory heavy magical realism. It treats the fantastic as interesting to think and write about in and of itself rather than merely for it's alegorical power.
 
-\*The idea of deliberately having to choose going into the light to leave limbo is one of a view explicit nods to [Kurt Vonnegut](author-Kurt-Vonnegut) but this book struck me as more hopeful? or at least more at peace than anything by Vonnegut.
+\*The idea of deliberately having to choose going into the light to leave limbo is one of a few explicit nods to [Kurt Vonnegut](author-Kurt-Vonnegut) but this book struck me as more hopeful? or at least more at peace than anything by Vonnegut.
