@@ -37,9 +37,9 @@ function entries(posts){
   `<entry>
     <title type="html"><![CDATA[${post.title}]]></title>
     <link href="${rootURL}/${bookSlug(post)}"/>
-    <id>${rootURL}/${bookSlug(post)}</id>
+    <id>${rootURL}/book-${bookSlug(post)}</id>
     <updated>${post.date}T00:00:00Z</updated>
-    <content type="html"><![CDATA[ <p>${post.title} by ${post.authors.join(' ')}. ${post['non-fiction']?'Non fiction':'Fiction'}, first published ${post.published}. <a href="${rootURL}/${bookSlug(post)}">Notes</a></p> ]]>
+    <content type="html"><![CDATA[ <p>${post.title} by ${post.authors.join(' ')}. ${post['non-fiction']?'Non fiction':'Fiction'}, first published ${post.published}. <a href="${rootURL}/book-${bookSlug(post)}">Notes</a></p> ]]>
     </content>
   </entry>`).join('\n');
 }
