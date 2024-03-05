@@ -14,6 +14,7 @@
 </script>
 <svelte:head>
   <title>Tom's books stack - {overViewData.title}</title>
+	<meta name="description" content="A website cataloguing and annotating books that I've has read" />
 	<meta property="og:title" content="Tom's books stack - {overViewData.title}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{$page.url.href}" />
