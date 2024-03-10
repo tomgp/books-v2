@@ -26,19 +26,18 @@
     border: 1px solid red;
   } */
   :root{
-    --text: rgb(51, 51, 51);
-    --highlight: rgb(189, 88, 0);
+    --text: rgb(18, 0, 109);
     --field:rgb(255, 255, 255);
-    --accent:rgb(69, 243, 231);
+    --accent:rgb(0, 106, 182);
+    --highlight: rgb(255, 138, 36);
   }
 
   @media (prefers-color-scheme: dark) {
     :root{
-      --primary:#62b8ff;
       --text:rgb(255, 255, 255);
-      --field:rgb(51, 51, 51);
-      --accent: rgb(189, 88, 0);
-      --highlight:rgb(69, 243, 231);
+      --field:rgb(18, 0, 109);
+      --accent: rgb(255, 138, 36);
+      --highlight:rgb(0, 106, 182);
     }
   }
 
@@ -59,13 +58,13 @@
   }
 
   :global(a){
-    color: var(--highlight, blue);
+    color: var(--accent, blue);
   }
 
 
   :global(a:hover){
     color: var(--text, black);
-    background-color: var(--accent, blue);
+    background-color: var(--highlight, blue);
   }
 
   :global(h1,h2){

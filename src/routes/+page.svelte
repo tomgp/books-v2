@@ -76,10 +76,6 @@
 		text-decoration: none;
 	}
 
-	ul a:hover{
-		color: var(--field);
-	}
-
 	ul.book-list{
 		margin-left:0px;
 		padding-left:0px;

@@ -16,10 +16,10 @@
 		stroke: var(--field, white);
 	}
 	.book.highlight1{
-		fill:var(--highlight, rgb(112, 112, 112));
+		fill:var(--accent,rgb(56, 255, 208));
 	}
 	.book.highlight2{
-		fill:var(--accent,rgb(56, 255, 208));
+		fill:var(--highlight, rgb(112, 112, 112));
 	}
 	/* .book-outline.highlight1{
 		stroke: var(--text, black);
