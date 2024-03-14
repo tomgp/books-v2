@@ -11,16 +11,18 @@
  },
  "dungeon": {
   "tag": "dungeon",
-  "count": 3,
+  "count": 4,
   "bookSlugs": [
    "The-Tombs-of-Atuan(1971)",
    "Top-10-Games-You-Can-Play-In-Your-Head-By-Yourself(2019)",
-   "Mazes(2022)"
+   "Mazes(2022)",
+   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)"
   ],
   "readSlugs": [
    "The-Tombs-of-Atuan(1971)-2019-02-15",
    "Top-10-Games-You-Can-Play-In-Your-Head-By-Yourself(2019)-2019-11-21",
-   "Mazes(2022)-2024-02-07"
+   "Mazes(2022)-2024-02-07",
+   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)-2024-03-08"
   ]
  },
  "gay": {
@@ -45,6 +47,18 @@
   "readSlugs": [
    "The-Secret-to-Superhuman-Strength(2021)-2022-10-29",
    "The-Times-I-knew-I-was-Gay(2020)-2024-02-15"
+  ]
+ },
+ "games": {
+  "tag": "games",
+  "count": 2,
+  "bookSlugs": [
+   "Mazes(2022)",
+   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)"
+  ],
+  "readSlugs": [
+   "Mazes(2022)-2024-02-07",
+   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)-2024-03-08"
   ]
  }
 }
