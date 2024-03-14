@@ -21,15 +21,14 @@
   </footer>
 </div>
 <style>
-  /* debug */
-  /* :global(*){
-    border: 1px solid red;
-  } */
+
   :root{
     --text: rgb(18, 0, 109);
     --field:rgb(255, 255, 255);
     --accent:rgb(0, 106, 182);
     --highlight: rgb(255, 138, 36);
+
+    --small-break: 375px;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -44,7 +43,7 @@
   nav{
     display: flex;
     width:100%;
-    padding-right:1lh;
+    padding: 0;;
     padding-top: 1lh;
   }
   
@@ -104,12 +103,26 @@
     padding-left:1lh;
     padding-right:1lh; 
   }
+
+  @media (max-width: 490px) {
+    main{
+      padding-left:0;
+      padding-right:0;
+    }
+  }
+
   footer{
     width:100%;
     max-width: 640px;
     padding: 2lh;
     padding-left:1lh;
     padding-right:1lh; 
+  }
+  @media (max-width: 490px) {
+    footer{
+      padding-left:0;
+      padding-right:0;
+    }
   }
 
 </style>

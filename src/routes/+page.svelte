@@ -89,16 +89,6 @@
 		line-height: 1lh;
 	}
 
-	@media (max-width: 375px) {
-		.book-item{
-			display: block;
-		}
-		.authors, .title, .pub-date{
-			/* display: block; */
-			width:100%;
-		}
-	}
-
 	.title{
 		white-space: nowrap;
 		overflow-x: hidden;
@@ -109,6 +99,17 @@
 		white-space: nowrap;
 		overflow-x: hidden;
 		text-overflow: ellipsis;
+	}
+
+	@media (max-width: 490px) {
+		.book-item{
+			display: block;
+		}
+		.authors, .title, .pub-date{
+			/* display: block; */
+			white-space: normal;
+			width:100%;
+		}
 	}
 
 	p.month-data{
