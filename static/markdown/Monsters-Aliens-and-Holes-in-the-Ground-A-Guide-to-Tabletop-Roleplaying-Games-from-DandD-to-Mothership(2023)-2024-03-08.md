@@ -14,7 +14,7 @@
  "translator": ""
 }
 ---
-I've followed the author Stu Horvath's [Vintage RPG account on Instagram](https://www.instagram.com/vintagerpg/) for a few years. When his book about the history of RPGs told via his collection came out I balked at the price and decided to hold off till I was feeling less skint. The next day it arrived in the post! Turns out that an earlier, flusher feeling, version of me had pre-ordered it. I'm glad I did. 
+I've Stu Horvath's [Vintage RPG account on Instagram](https://www.instagram.com/vintagerpg/) for a few years. When "Monsters, Aliens, and Holes in the Ground" his book about the history of RPGs told via his collection came out I balked at the price and decided to hold off till I was feeling less skint. The next day it arrived in the post! Turns out that an earlier, flusher feeling, version of me had pre-ordered it. I'm glad I did. 
 
 The book is divided by decade starting in the 1970s and finishing right up in the present. Within this broad structure and with the evidence of his collection Horvath sketches a particular view of RPG history defined by iterative change and experiementation, often enabled by the fact that game mechanics don't fall under copyright and a willingness to borrow liberally from other media and disciplines, is there any other form of entertainment that so closely meshes maths and improvisational theatre?
 
