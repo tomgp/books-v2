@@ -2,8 +2,11 @@
   export let rating="";
   export let showAverage = true;
   function getNumericalRating(r){
-    let scoreLookup = { "++":5,"+":4,"-":2,"--":1 }
-    return scoreLookup[r] ? scoreLookup[r] : 3;
+    if(isNaN(r)){
+      let scoreLookup = { "++":5,"+":4,"-":2,"--":1 }
+      return scoreLookup[r] ? scoreLookup[r] : 3;
+    }
+    return r;
   }
   let score = getNumericalRating(rating);
 </script>
@@ -12,7 +15,11 @@
     <!-- <path d="M87 152h125v115H87z" style="fill:none"/> -->
     {#if score==1}
     <g id="face1">
-      <path d="m398 174 15-12 14 12"  transform="matrix(0 -1.41379 1.58333 0 -91.5 767.23)"/><path d="M85 358.04H62"  transform="translate(108 -174)"/><path d="m398 174 15-12 14 12"  transform="matrix(0 1.41379 -1.58333 0 392.5 -399.15)"/><path d="M85 358.04H62"  transform="rotate(180 96.5 271.04)"/><path d="M9 424h67c-2-18.55-17.6-32.87-35.11-33.1C23.33 390.64 11.63 406.07 9 424Z" style="fill:none;stroke:#000;stroke-width:8.5px;stroke-linejoin:round" transform="translate(108 -174)"/>
+      <path d="m398 174 15-12 14 12"  transform="matrix(0 -1.41379 1.58333 0 -91.5 767.23)"/>
+      <path d="M85 358.04H62"  transform="translate(108 -174)"/>
+      <path d="m398 174 15-12 14 12"  transform="matrix(0 1.41379 -1.58333 0 392.5 -399.15)"/>
+      <path d="M85 358.04H62"  transform="rotate(180 96.5 271.04)"/>
+      <path d="M9 424h67c-2-18.55-17.6-32.87-35.11-33.1C23.33 390.64 11.63 406.07 9 424Z" style="stroke-linejoin:round" transform="translate(108 -174)"/>
     </g>
     {/if}
     {#if score==2}
@@ -51,5 +58,8 @@
     .heart-eye{
       fill:var(--text);
       stroke:none;
+    }
+    .mouth{
+      stroke: var(--text);
     }
   </style>
