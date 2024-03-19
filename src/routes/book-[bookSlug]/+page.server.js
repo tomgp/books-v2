@@ -15,6 +15,8 @@ export async function load({ params }) {
 			let readData = getMD(file);
 			content.push(readData);
 		});
+	}else{
+		console.log('reads', reads);
 	}
 	return {
 		slug: params.bookSlug,
