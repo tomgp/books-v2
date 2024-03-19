@@ -8,7 +8,7 @@ const config = {
 		adapter: adapter({
 			routes: {
 				include: ['/*'],
-				exclude: ['/about', '/author-*', '/book-*', 'feed', '/published-*', '/theme-*']
+				exclude: ['/about', '/author-*', '/book-*', '/feed', '/published-*', '/theme-*']
 			}
 		}),
 		prerender:{
