@@ -7,7 +7,7 @@ const config = {
 	kit: {
 		adapter: adapter({
 			routes: {
-				exclude: ['/*']
+				exclude: ['<all>']
 			}
 		}),
 		prerender:{
