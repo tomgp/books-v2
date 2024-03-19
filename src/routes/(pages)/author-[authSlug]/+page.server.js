@@ -1,5 +1,5 @@
-import { loadReadingList } from '../../lib/data-load.server.js';
-import { authorSlug } from '../../lib/slugger.js';
+import { loadReadingList } from '$lib/data-load.server.js';
+import { authorSlug } from '$lib/slugger.js';
 
 const list = loadReadingList();
 

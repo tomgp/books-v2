@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import { bookSlug } from '../../lib/slugger.js';
+	import { bookSlug } from '$lib/slugger.js';
 
 	export let data;
 </script>
