@@ -20,6 +20,7 @@ Anyway, yes, it's really good. These stories really double down on the fairy tal
 
 The opening paragraphs of the first story:
 >All stories about divorce must begin some other place, and so let us begin with a man so very rich, he might reach out and have almost any thing he desired, as well as many things that he did not. He had so many houses even his accoun tants could not keep track of them all. He had private planes and newspapers and politicians who saw to it that his wishes became laws. He had orchards, islands, baseball teams, and even a team of entomologists whose mandate was to find new species of beetles to be given variations on the rich man's name. (For if it was true that God loved beetles, was it not true He loved the rich man even more? Was his good fortune not the proof of this?)
+
 >The rich man had all of this and more than I have space to write. Anything you have ever possessed, know that he had this, too. And if he did not, he could have paid you whatever your price was in order to obtain it.
 
 It's Jeff Besoz or Rupert Murdoch as a fairy tale monarch and that last line, so dark! "he could have paid you whatever your price was in order to obtain it"
