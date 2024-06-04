@@ -104,11 +104,22 @@
 	@media (max-width: 490px) {
 		.book-item{
 			display: block;
+			padding-bottom: 1rem;
+		}
+		.book-item .icon{
+			/* width:0px;
+			height:0px; */
 		}
 		.authors, .title, .pub-date{
-			/* display: block; */
+			display: inline-block;
 			white-space: normal;
-			width:100%;
+			/* width:100%; */
+		}
+		.pub-date{
+			display: none;
+		}
+		.authors::before{
+			content: " - ";
 		}
 	}
 
