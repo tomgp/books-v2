@@ -1,6 +1,6 @@
 {
  "title": "Mancunians: Where Do We Start, Where Do I Begin?",
- "authors": "Davis Scott",
+ "authors": "David Scott",
  "date": "2024-07-15",
  "rating": "",
  "re-read": "",
