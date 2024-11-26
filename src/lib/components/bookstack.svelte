@@ -1,16 +1,18 @@
 <script>
 	import Book from './Book.svelte';
 
-	import { scaleLinear, scaleBand } from 'd3';
+	import { scaleLinear, scaleBand, randomUniform, randomLcg  } from 'd3';
 
 	export let books = [];
 	export let title = '';
 	export let height = 350;
 	export let width = 700;
 	export let margin = { top: 50, left: 0, bottom: 20, right: 0 };
-	export let jitter = 0.18;
+	export let jitter = 2.5;
 	export let minPages = 100;
 	export let splitOnKey = (book) => 'books';
+
+	let random = randomUniform.source(randomLcg(111177))(-jitter, jitter)
 
 	let booksCopy = [...books].reverse();
 	let meanAspectRatio = 3000; // if 1 page is 1 pixel thick the length of the books spine should be this number of px
@@ -24,6 +26,8 @@
 	let stackCount = 0;
 	let pageScale = scaleLinear();
 	let stackScale = scaleBand();
+
+
 
 	// split into stacks
 	$: {
@@ -61,10 +65,11 @@
 			if (!book.pages || book.pages == '') {
 				book.ignore = true;
 			}
-			let jitterwidth = stackScale.bandwidth() * jitter;
-			let bookJitter = Math.random() * jitterwidth - jitterwidth / 2;
+
+			let bookJitter = random();
+			console.log('JIT', bookJitter *10, stackScale.bandwidth(), bookJitter * stackScale.bandwidth());
 			book.x = 0 + bookJitter;
-			book.width = Math.min(stackScale.bandwidth(), meanSpineLength + bookJitter);
+			book.width = Math.min(stackScale.bandwidth(), meanSpineLength + random());
 			book.height = pageScale(Math.max(Number(book.pages), minPages));
 			acc += book.height;
 			book.y = plotHeight - acc;
@@ -96,9 +101,7 @@
 					<!-- <text dy="-5">{entry[1].key}</text> -->
 					{#each entry[1].books as book}
 						{#if !book.ignore}
-							<g transform="translate({book.x},{book.y})" 
-								on:mousemove={(ev)=>toolTip(ev,book)}
-								on:mouseout={()=>toolTipOff()}>
+							<g transform="translate({book.x},{book.y})">
 								<Book width={book.width} height={book.height} rating={book.rating} />
 							</g>
 						{/if}
