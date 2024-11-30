@@ -67,9 +67,8 @@
 			}
 
 			let bookJitter = random();
-			console.log('JIT', bookJitter *10, stackScale.bandwidth(), bookJitter * stackScale.bandwidth());
 			book.x = 0 + bookJitter;
-			book.width = Math.min(stackScale.bandwidth(), meanSpineLength + random());
+			book.width = Math.min(stackScale.bandwidth(), meanSpineLength + random()*2);
 			book.height = pageScale(Math.max(Number(book.pages), minPages));
 			acc += book.height;
 			book.y = plotHeight - acc;
