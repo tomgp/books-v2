@@ -6,7 +6,7 @@
  "re-read": "",
  "pages": "192",
  "non-fiction": "",
- "comic": "",
+ "comic": "TRUE",
  "published": "2022",
  "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/207eb578-a3be-451c-66ca-f61ffecb7100/bookshot",
  "tags": "",
