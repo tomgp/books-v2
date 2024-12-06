@@ -15,7 +15,7 @@
 <ul>
 	{#each data.books as book}
 		<li>
-			<a href="book-{bookSlug(book)}">{book.title} ({book.published})</a> Read&nbsp;on:&nbsp;{book.date}
+			<a href="book-{bookSlug(book)}">{book.title} ({book.published})</a> {@html book['re-read'] == 'TRUE' ? "Revisited&nbsp;" : "Read&nbsp;on&nbsp;"}{book.date}
 		</li>
 	{/each}
 </ul>
