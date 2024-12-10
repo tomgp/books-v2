@@ -10,11 +10,11 @@
  "non-fiction": "",
  "comic": "",
  "published": "2000",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/2faa1b1c-5219-4dcd-22e2-54639f6acb00/bookshot"
+ "image": " https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/cf7b2c66-a95d-4ea1-de92-e2c65a64dc00/bookshot"
 }
 ---
 
-Really good. More open ended than [Lightning Rods](book-Lightning-Rods(2011)) and less funny but much more affecting. Taps the same vein of millenial maximalism as e.g. Infinite Jest but is much better than that (re Infinite Jest: my enjoyment of which I'm increasingly coming to believe was a kind of literarary Stockholm syndrome). DeWitt is really good at the kind of telling details that I respond to; highly specific stuff about computers, card games, London transport and fast food establishments. When I'm allowing myself to buy books again I'll be getting hold of the rest of her oeuvre.
+Really good. More open ended than [Lightning Rods](book-Lightning-Rods(2011)) and less funny but much more affecting. Taps the same vein of millenial maximalism as e.g. Infinite Jest but is much better than that (re Infinite Jest: my enjoyment of which I'm increasingly coming to believe was a kind of literary Stockholm syndrome). DeWitt is really good at the kind of telling details that I respond to; highly specific stuff about computers, card games, London transport and fast food establishments. When I'm allowing myself to buy books again I'll be getting hold of the rest of her oeuvre.
 
 In the meantime I enjoyed her Bridge influenced short story [The Sexual Codes OF The Europeans](https://evergreenreview.com/read/sexual-codes-of-the-europeans/). It starts perfectly with just the sort of specific detail I was just talking about ...
 
