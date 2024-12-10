@@ -34,7 +34,7 @@
 <Bookstack splitOnKey={(book) => String(book.date).split('-')[0]} books={currentList} />
 	{#each Object.entries(structuredData).reverse() as [index, year]}
 	<div class="year-head">
-	<h2>{year.key}</h2>
+	<h2><a href="/read-{year.key}">{year.key}</a></h2>
 	<p class="month-data">{year.count} books {year.pageCount.toLocaleString()}pp</p>
 	</div>
 	{#each year.months.reverse() as month}
@@ -126,5 +126,9 @@
 	p.month-data{
 		margin-bottom: 0.5lh;
 		margin-top:0.8lh;
+	}
+	h2 a{
+		text-decoration: none;
+		color: var(--text);
 	}
 </style>
