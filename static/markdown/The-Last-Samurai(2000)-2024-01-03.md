@@ -10,7 +10,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "2000",
- "image": " https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/cf7b2c66-a95d-4ea1-de92-e2c65a64dc00/bookshot"
+ "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/cf7b2c66-a95d-4ea1-de92-e2c65a64dc00/bookshot"
 }
 ---
 
