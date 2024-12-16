@@ -13,12 +13,18 @@ function parseBookData(d){
 }
 
 export function getMD(location){
-	const md = fs.readFileSync(location, 'utf-8');
+	let md = ''
+	try{
+		md = fs.readFileSync(location, 'utf-8');
+	}catch(err){
+		md = "#NONONONO"
+	}
+
 	const parts = md.split('---');
-	let data = parseBookData(JSON.parse(parts[0]));
+
 	return {
-		markdown: parts[1],
-		data
+		markdown: parts.length > 1 ? parts[1] : parts[0],
+		data: parts.length > 1 ? parseBookData(JSON.parse(parts[0])) : {},
 	};
 }
 			

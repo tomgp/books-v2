@@ -1,4 +1,5 @@
 <script>
+  import { marked } from 'marked';
 	import { page } from '$app/stores';
 	import { bookSlug } from '../../lib/slugger.js';
 
@@ -12,15 +13,16 @@
 	<meta property="og:image" content="" />
 </svelte:head>
 <h1>{data.year}</h1>
+<p>{data.books.length} books. {data.books.reduce((acc,current)=>acc+Number(current.pages),0).toLocaleString()}pp.</p>
 <div class="grid">
 {#each data.books as book}
 <a href="book-{bookSlug(book)}">
   <div class="book-cell">
 
     {#if book.image}
-      <img src="{book.image}" alt="{book.title} {book.author} ({book.published})">
+      <img src="{book.image}" alt="A hand holding a book, {book.title}">
       {:else}
-      <img src="/images/book-place-holder.svg">
+      <img alt="a place holder, a generic book" src="/images/book-place-holder.svg">
     {/if}
     <div class="overlay">
       <p>{book.title}</p>
@@ -30,6 +32,7 @@
 </a>
 {/each}
 </div>
+{@html marked.parse(data.text)}
 <div class="year-nav">
 {#each data.years as year}
   {#if year == data.year}
@@ -95,5 +98,8 @@
 }
 .overlay:hover{
   opacity: 1;
+}
+.grid a:hover{
+  background-color: var(--field);
 }
 </style>
