@@ -17,7 +17,7 @@ export function getMD(location){
 	try{
 		md = fs.readFileSync(location, 'utf-8');
 	}catch(err){
-		md = "#NONONONO"
+		md = " ... ";
 	}
 
 	const parts = md.split('---');
