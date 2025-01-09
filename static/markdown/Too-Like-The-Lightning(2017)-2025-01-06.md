@@ -14,4 +14,4 @@
  "translator": ""
 }
 ---
-Enjoyed this, hoepfully hte library will deliver the next volumne before I forget what happend in this one. Heavy Gene Wolfe vibes. 
+Enjoyed this, hopefully the library will deliver the next volumne before I forget what happend in this one. Heavy Gene Wolfe vibes. 
