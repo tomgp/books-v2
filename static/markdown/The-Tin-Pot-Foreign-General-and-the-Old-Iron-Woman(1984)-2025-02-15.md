@@ -1,7 +1,7 @@
 {
  "title": "The Tin-Pot Foreign General and the Old Iron Woman",
  "authors": "Raymond Briggs",
- "date": "2025-01-15",
+ "date": "2025-02-15",
  "rating": "",
  "re-read": "",
  "pages": "48",
