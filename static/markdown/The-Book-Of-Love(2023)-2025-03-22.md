@@ -1,0 +1,17 @@
+{
+ "title": "The Book Of Love",
+ "authors": "Kelly Link",
+ "date": "2025-03-22",
+ "rating": "+",
+ "re-read": "",
+ "pages": "640",
+ "non-fiction": "",
+ "comic": "",
+ "published": "2023",
+ "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/c093762f-cb98-4c18-4bf1-14c65dc2cf00/bookshot",
+ "tags": "",
+ "editors": "",
+ "translator": ""
+}
+---
+I _LOVE_ Kelly Link's short stories, this never quite hits the highs of the best of them but it's still pretty great. Necesarily less rich (you can't eat only Belgian chocolate for weeks on end, you'd end up hating it), it captures the liminal space between childhood and adulthood perfectly. As always with Link, the fantastic elements somehow seem more mundane than the perfectly normal characters and their relationships, all of which are fully alive on the page. The main cast's (Mo, Daniel, Suzannah, and Laura)late teenage relationships and responses all too familiar, I was rooting for each and every one of them and the way.
