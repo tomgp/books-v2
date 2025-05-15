@@ -6,8 +6,8 @@
 	export let data;
 </script>
 <svelte:head>
-  <title>Tom's books stack - {data.books[0].authors}</title>
-	<meta property="og:title" content="Tom's books stack - {data.books[0].authors}" />
+  <title>Tom's books stack - {data.year}</title>
+	<meta property="og:title" content="Tom's books stack - {data.year}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{page.url}" />
 	<meta property="og:image" content="" />
