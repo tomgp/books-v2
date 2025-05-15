@@ -1,4 +1,18 @@
 {
+ "christian": {
+  "tag": "christian",
+  "count": 3,
+  "bookSlugs": [
+   "Infinite-Jest(1996)",
+   "Gilead(2004)",
+   "Light-Perpetual(2021)"
+  ],
+  "readSlugs": [
+   "Infinite-Jest(1996)-2015-08-15",
+   "Gilead(2004)-2025-05-01",
+   "Light-Perpetual(2021)-2025-05-15"
+  ]
+ },
  "grief": {
   "tag": "grief",
   "count": 1,
