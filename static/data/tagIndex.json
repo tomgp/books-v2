@@ -53,14 +53,16 @@
  },
  "memoir": {
   "tag": "memoir",
-  "count": 2,
+  "count": 3,
   "bookSlugs": [
    "The-Secret-to-Superhuman-Strength(2021)",
-   "The-Times-I-knew-I-was-Gay(2020)"
+   "The-Times-I-knew-I-was-Gay(2020)",
+   "Spent-Light(2024)"
   ],
   "readSlugs": [
    "The-Secret-to-Superhuman-Strength(2021)-2022-10-29",
-   "The-Times-I-knew-I-was-Gay(2020)-2024-02-15"
+   "The-Times-I-knew-I-was-Gay(2020)-2024-02-15",
+   "Spent-Light(2024)-2024-11-30"
   ]
  },
  "games": {
@@ -73,6 +75,16 @@
   "readSlugs": [
    "Mazes(2022)-2024-02-07",
    "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)-2024-03-08"
+  ]
+ },
+ "short-stories": {
+  "tag": "short-stories",
+  "count": 1,
+  "bookSlugs": [
+   "Some-Trick(2018)"
+  ],
+  "readSlugs": [
+   "Some-Trick(2018)-2025-05-26"
   ]
  }
 }

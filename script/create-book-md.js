@@ -19,6 +19,7 @@ bookList.forEach((book, i) => {
 	slugList[bookSlug(book)].push(readSlug(book));
 	if (mdFiles.indexOf(fileName) > -1) {
 		console.log('read record already exists', book.title, book.published);
+		console.log('update?');
 	} else {
 		const markdown = `${JSON.stringify(book, null, ' ')}
 ---
