@@ -4,11 +4,9 @@ import { csvParse } from 'd3';
 import { bookSlug, readSlug, tagSlug } from '../src/lib/slugger.js';
 
 const dataDir = './static/data';
-const mdDir = './static/markdown/tags';
+// const mdDir = './static/markdown/tags';
 
 const tagList = {};
-
-const mdFiles = fs.readdirSync(mdDir);
 
 csvParse(fs.readFileSync(path.join(dataDir, 'reading-list.csv'), 'utf-8'))
 	.filter((book) => book.tags)
@@ -29,7 +27,5 @@ csvParse(fs.readFileSync(path.join(dataDir, 'reading-list.csv'), 'utf-8'))
 			tagList[slug].readSlugs.push(readSlug(book));
 		});
 	});
-
-const slugList = {};
 
 fs.writeFileSync(path.join(dataDir, 'tagIndex.json'), JSON.stringify(tagList, null, ' ')); //a index of tags and associated "reads"

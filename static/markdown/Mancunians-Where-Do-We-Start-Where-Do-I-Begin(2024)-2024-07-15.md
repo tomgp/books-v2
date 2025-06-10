@@ -8,7 +8,7 @@
  "non-fiction": "TRUE",
  "comic": "",
  "published": "2024",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/bd9eefbc-9875-44a9-6ac0-c758d4bbc500/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/mancunians.webp",
  "tags": "",
  "editors": "",
  "translator": ""

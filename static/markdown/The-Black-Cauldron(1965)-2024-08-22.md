@@ -8,10 +8,9 @@
  "non-fiction": "",
  "comic": "",
  "published": "1965",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/e13bdd48-45c1-4560-bee8-deead5589b00/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/black-cauldron.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-

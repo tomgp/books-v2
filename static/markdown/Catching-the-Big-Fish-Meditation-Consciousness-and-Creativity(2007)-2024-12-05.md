@@ -8,7 +8,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "2007",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/a1ed1719-64ac-452c-2e17-1dd88b9c7b00/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/lynch.webp",
  "tags": "",
  "editors": "",
  "translator": ""

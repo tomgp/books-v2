@@ -8,10 +8,10 @@
  "non-fiction": "",
  "comic": "",
  "published": "2017",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/d350d1d6-0cc2-41a3-8a83-775419fb5d00/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/too-like-the-lightning.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-Enjoyed this, hopefully the library will deliver the next volumne before I forget what happend in this one. Heavy Gene Wolfe vibes. 
+Enjoyed this, hopefully the library will deliver the next volumne before I forget what happend in this one. Heavy Gene Wolfe vibes.

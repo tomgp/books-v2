@@ -8,13 +8,13 @@
  "non-fiction": "",
  "comic": "",
  "published": "2023",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/80660ef7-8592-4ff6-9cc6-0eb0578c2800/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/kelly-link.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-I'm in the habit of buying Kelly Link books as soon as they come out and then not reading them for half a year or so. She doesn't publish much and I like to keep some in reserve. Of course hot on the heels of this collection she released her long awaited (by fans at least, the big table at the front of Waterstones in Crouch End remains impervious to her appeal) novel _The Book of Love_ (currently waiting on my shelf) so I needn't have worried. 
+I'm in the habit of buying Kelly Link books as soon as they come out and then not reading them for half a year or so. She doesn't publish much and I like to keep some in reserve. Of course hot on the heels of this collection she released her long awaited (by fans at least, the big table at the front of Waterstones in Crouch End remains impervious to her appeal) novel _The Book of Love_ (currently waiting on my shelf) so I needn't have worried.
 
 Anyway, yes, it's really good. These stories really double down on the fairy tale aspect of Link's fiction, explicitly so; each story is subtitled with the name of a fairy tale to which it glancingly refers. The way she's able to mix the language and narative logic of fairy tales with believable characters inhabiting the modern world (or something at least a bit like it) really is something else. It seems effortless but I don't know anyone else who even comes close.
 

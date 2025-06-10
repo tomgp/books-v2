@@ -10,7 +10,6 @@
  "non-fiction": "",
  "comic": "",
  "published": "1959",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/62b7be1a-5516-4d9c-2373-4342e17ae700/bookshot"
+ "image": "https://static.2x2.graphics/assets/books/Player%20Piano%20copy.webp"
 }
 ---
-

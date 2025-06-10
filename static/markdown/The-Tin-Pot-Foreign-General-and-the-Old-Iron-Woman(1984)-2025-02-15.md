@@ -8,10 +8,9 @@
  "non-fiction": "",
  "comic": "TRUE",
  "published": "1984",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/84b3ca00-ba3d-42ad-f825-b7c3f78f2c00/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/ForeignGeneralOldWoman.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-

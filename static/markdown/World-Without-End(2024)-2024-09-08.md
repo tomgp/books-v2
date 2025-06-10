@@ -8,7 +8,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "2024",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/6eed6591-5185-4973-911f-b4d6ec8f2000/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/world-without-end.webp",
  "tags": "",
  "editors": "",
  "translator": ""

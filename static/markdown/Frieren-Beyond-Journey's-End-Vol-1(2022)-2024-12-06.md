@@ -8,7 +8,7 @@
  "non-fiction": "",
  "comic": "TRUE",
  "published": "2022",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/207eb578-a3be-451c-66ca-f61ffecb7100/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/frieren.webp",
  "tags": "",
  "editors": "",
  "translator": ""

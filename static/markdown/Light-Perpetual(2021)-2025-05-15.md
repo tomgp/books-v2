@@ -8,10 +8,9 @@
  "non-fiction": "",
  "comic": "",
  "published": "2021",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/9dd929ec-97dc-4866-7dff-ff7807064a00/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/light-perpetual.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-

@@ -8,10 +8,9 @@
  "non-fiction": "",
  "comic": "",
  "published": "2017",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/9f2656b1-8312-4d3b-0569-e6abe80c3400/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/all-systems-red.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-

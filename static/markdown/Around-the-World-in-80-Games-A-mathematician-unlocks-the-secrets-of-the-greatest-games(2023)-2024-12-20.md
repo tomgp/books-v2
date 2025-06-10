@@ -8,7 +8,7 @@
  "non-fiction": "TRUE",
  "comic": "",
  "published": "2023",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/d15f7bf3-0308-46ff-f036-53a811407a00/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/80-games.webp",
  "tags": "",
  "editors": "",
  "translator": ""

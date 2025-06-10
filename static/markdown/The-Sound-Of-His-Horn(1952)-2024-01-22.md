@@ -10,7 +10,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "1952",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/9216e672-79ef-48a5-f84b-7af340b1df00/bookshot"
+ "image": "https://static.2x2.graphics/assets/books/the%20sound%20of%20his%20horn.webp"
 }
 ---
 

@@ -8,10 +8,9 @@
  "non-fiction": "",
  "comic": "",
  "published": "2019",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/20b54b76-62f0-4537-6502-dcab22f31700/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/our-share-of-the-night.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-

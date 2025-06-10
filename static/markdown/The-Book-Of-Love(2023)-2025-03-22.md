@@ -8,7 +8,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "2023",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/c093762f-cb98-4c18-4bf1-14c65dc2cf00/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/book-of-love.webp",
  "tags": "",
  "editors": "",
  "translator": ""

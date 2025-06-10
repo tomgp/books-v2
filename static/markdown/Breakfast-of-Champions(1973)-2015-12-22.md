@@ -10,7 +10,6 @@
  "non-fiction": "",
  "comic": "",
  "published": "1973",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/e6ed173e-fe8c-4350-1a2b-f10c54fa2c00/bookshot"
+ "image": "https://static.2x2.graphics/assets/books/Novels%20%26%20Storics%201963-1973.webp"
 }
 ---
-

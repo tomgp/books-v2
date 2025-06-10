@@ -8,7 +8,7 @@
  "non-fiction": "",
  "comic": "",
  "published": "2022",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/b62d2f58-0e56-427d-2a80-6a5fe70e1400/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/theenglishunderstangwool.webp",
  "tags": "",
  "editors": "",
  "translator": ""

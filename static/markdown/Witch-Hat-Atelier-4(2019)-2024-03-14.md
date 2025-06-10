@@ -8,10 +8,9 @@
  "non-fiction": "",
  "comic": "TRUE",
  "published": "2019",
- "image": "https://imagedelivery.net/j9Jow5yhb9rJLKWa-j_yTg/1b1990ba-6ac1-4938-6be3-db812800e100/bookshot",
+ "image": "https://static.2x2.graphics/assets/books/witchhat-4.webp",
  "tags": "",
  "editors": "",
  "translator": ""
 }
 ---
-

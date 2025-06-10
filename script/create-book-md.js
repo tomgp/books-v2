@@ -11,7 +11,7 @@ const bookList = csvParse(fs.readFileSync(path.join(dataDir, 'reading-list.csv')
 );
 const mdFiles = fs.readdirSync(mdDir);
 const slugList = {};
-bookList.forEach((book, i) => {
+bookList.forEach((book) => {
 	const fileName = `${readSlug(book)}.md`;
 	if (!slugList[bookSlug(book)]) {
 		slugList[bookSlug(book)] = [];
