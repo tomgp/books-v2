@@ -2,7 +2,7 @@
  "title": "The Universal Baseball Association, J Henry Waugh Prop.",
  "authors": "Robert Coover",
  "date": "2025-04-16",
- "rating": "+",
+ "rating": "",
  "re-read": "",
  "pages": "262",
  "non-fiction": "",
