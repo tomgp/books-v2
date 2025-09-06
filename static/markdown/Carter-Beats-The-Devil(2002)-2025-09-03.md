@@ -1,6 +1,6 @@
 {
  "title": "Carter Beats The Devil",
- "authors": "Glen Gold",
+ "authors": "Glen David Gold",
  "date": "2025-09-03",
  "rating": "",
  "re-read": "",
