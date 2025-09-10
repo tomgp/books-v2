@@ -9,7 +9,6 @@
  "comic": "",
  "published": "2017",
  "image": "https://static.2x2.graphics/assets/books/eleanor-oliphant.webp",
- "tags": "",
  "editors": "",
  "translator": ""
 }
