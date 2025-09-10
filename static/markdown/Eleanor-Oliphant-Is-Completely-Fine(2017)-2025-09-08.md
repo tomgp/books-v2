@@ -13,4 +13,4 @@
  "translator": ""
 }
 ---
-Fine.
+The cover says "funny, touching, and unpredictable" I'd agree with the first two but not the third. Fine.
