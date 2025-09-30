@@ -10,8 +10,8 @@
 	<main data-sveltekit-reload>
 		<nav>
 			<span
-				><a href="/"><strong>books</strong> index</a>, <a href="about">about</a>,
-				<a href="feed/atom">feed</a>
+				><a href="/"><strong>books</strong> index</a>, <a href="/about">about</a>,
+				<a href="/feed/atom">feed</a>
 			</span>
 		</nav>
 		<slot />
