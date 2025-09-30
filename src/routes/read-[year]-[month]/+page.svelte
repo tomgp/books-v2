@@ -52,7 +52,7 @@
 </div>
 <div class="month-nav">
 	{#each data.months as month}
-		{#if month == data.month}
+		{#if Number(month) == Number(data.monthNumber)}
 			<a href="/read-{data.year}-{month}" class="current"> {monthName[month]} </a>
 		{:else}
 			<a href="/read-{data.year}-{month}"> {monthName[month]} </a>
@@ -130,5 +130,9 @@
 	}
 	.grid a:hover {
 		background-color: var(--field);
+	}
+	a.current {
+		text-decoration: none;
+		font-weight: bold;
 	}
 </style>

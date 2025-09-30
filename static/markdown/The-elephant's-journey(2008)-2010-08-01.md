@@ -1,8 +1,6 @@
 {
- "title": "The elephant's journey",
- "authors": "José Saramago",
- "editors": "",
- "translator": "",
+ "title": "The Elephant's Journey",
+ "": "José Saramago",
  "date": "2010-08-01",
  "rating": "",
  "re-read": "",
@@ -10,7 +8,10 @@
  "non-fiction": "",
  "comic": "",
  "published": "2008",
- "image": ""
+ "image": "",
+ "tags": "",
+ "editors": "",
+ "translator": ""
 }
 ---
 
