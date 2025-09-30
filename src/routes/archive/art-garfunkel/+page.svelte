@@ -40,7 +40,8 @@
 <div class="original-intro">
 	<figure>
 		<img
-			src="https://static.2x2.graphics/assets/books/agbooks.gif"
+			class="mono"
+			src="https://static.2x2.graphics/assets/books/agbooks.png"
 			alt="A cartoon of Art Garfunkel sitting cross-legged in a high backed armchair reading a book and surrounded by piles of books"
 		/>
 		<figcaption>Illustration: Tom Bachtell</figcaption>
@@ -52,14 +53,12 @@
 		favorites.
 	</p>
 </div>
-<h2 id="the-books">The books</h2>
+<h2 id="the-books">Book List</h2>
 <nav>
 	<a href="#the-books" on:click={filterFavorites}>Favorites</a>
 	<a href="#the-books" on:click={clearFilter}>All</a>
 	<span class="separator">&#10043;</span>
-	<a href={browser ? '#the-books' : '#book-1'} on:click={() => filterBooks(1, 148)}
-		>Book List for 1968 - 1978</a
-	>
+	<a href={browser ? '#the-books' : '#book-1'} on:click={() => filterBooks(1, 148)}>1968 - 1978</a>
 	<a href={browser ? '#the-books' : '#book-148'} on:click={() => filterBooks(148, 278)}
 		>1979 - 1983</a
 	>
@@ -201,8 +200,12 @@
 	nav a,
 	.separator {
 		margin-right: 1rem;
+		white-space: nowrap;
 	}
 	.list {
 		min-height: 70vh;
+	}
+	.mono {
+		background-color: white;
 	}
 </style>
