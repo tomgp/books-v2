@@ -49,8 +49,7 @@
 	<p>
 		Since the 1960's, Art Garfunkel has been a voracious reader. We are pleased to present a listing
 		of every book Art has read since 1968. To view a list of Art Garfunkel's favorite books, go to
-		<a href="#the-books" on:click={filterFavorites}>Favorites</a>. Books with [in bold] are
-		favorites.
+		<a href="#the-books" on:click={filterFavorites}>Favorites</a>. Books [in bold] are favorites.
 	</p>
 </div>
 <h2 id="the-books">Book List</h2>
