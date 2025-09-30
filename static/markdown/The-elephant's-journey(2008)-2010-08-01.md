@@ -1,6 +1,6 @@
 {
  "title": "The Elephant's Journey",
- "": "José Saramago",
+ "authors": "José Saramago",
  "date": "2010-08-01",
  "rating": "",
  "re-read": "",

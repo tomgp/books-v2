@@ -10,7 +10,7 @@ export function loadReadingList() {
 	return csvParse(list, rowParser);
 }
 
-export function loadLinks(){
+export function loadLinks() {
 	const links = fs.readFileSync('static/data/links.csv', 'utf-8');
 	return csvParse(links);
 }
