@@ -67,11 +67,15 @@
 						><a href="book-{bookSlug(book)}">{book.title}</a></span
 					>
 					<div class="authors" title={book.authors.join(',')}>
-						{#each book.authors as author, ia}
-							<a href="author-{authorSlug(author)}">{author}</a>{ia == book.authors.length - 1
-								? ''
-								: ', '}
-						{/each}
+						{#if book.authors.length > 0}
+							{#each book.authors as author, ia}
+								{#if author != ''}
+									<a href="author-{authorSlug(author)}">{author}</a>{ia == book.authors.length - 1
+										? ''
+										: ', '}
+								{/if}
+							{/each}
+						{/if}
 					</div>
 					<span class="pub-date">({book.published})</span>
 					<span class="icon"><RatingIcon rating={book.rating} showAverage={false} /></span>

@@ -42,8 +42,10 @@
 		<p>
 			By
 			{#each overViewData.authors as author, i}
-				<a href="author-{authorSlug(author)}">{author}</a
-				>{#if i < overViewData.authors.length - 1}{@html ',&#x20;'}{/if}
+				{#if author != ''}
+					<a href="author-{authorSlug(author)}">{author}</a
+					>{#if i < overViewData.authors.length - 1}{@html ',&#x20;'}{/if}
+				{/if}
 			{/each}
 			{#if overViewData.translator}. Translated by {overViewData.translator}{/if}
 		</p>
@@ -65,17 +67,8 @@
 	<p>{readThrough.data.date}</p>
 	{@html marked.parse(readThrough.markdown)}
 {/each}
-<div class="hidden">
-	<h2>groups</h2>
-	{#each tagCollection as t}
-		<a href="theme-{tagSlug(t)}">{t}</a>
-	{/each}
-</div>
 
 <style>
-	.hidden {
-		display: none;
-	}
 	.start-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;

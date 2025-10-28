@@ -1,6 +1,6 @@
 {
  "title": "Bring Up the Bodies",
- "authors": "Hillary Mantel",
+ "authors": "Hilary Mantel",
  "editors": "",
  "translator": "",
  "date": "2013-04-01",
@@ -13,4 +13,3 @@
  "image": ""
 }
 ---
-
