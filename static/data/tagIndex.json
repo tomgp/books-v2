@@ -99,14 +99,16 @@
  },
  "games": {
   "tag": "games",
-  "count": 2,
+  "count": 3,
   "bookSlugs": [
    "Mazes(2022)",
-   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)"
+   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)",
+   "Cardboard-Ghosts(2025)"
   ],
   "readSlugs": [
    "Mazes(2022)-2024-02-07",
-   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)-2024-03-08"
+   "Monsters-Aliens-and-Holes-in-the-Ground-A-Guide-to-Tabletop-Roleplaying-Games-from-DandD-to-Mothership(2023)-2024-03-08",
+   "Cardboard-Ghosts(2025)-2025-10-30"
   ]
  },
  "short-stories": {
