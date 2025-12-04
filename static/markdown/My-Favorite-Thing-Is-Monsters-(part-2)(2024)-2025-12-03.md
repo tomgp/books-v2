@@ -15,4 +15,4 @@
 }
 ---
 
-Part 2 continues to be incredible. Every few pages I'd stop and pinch myself "Is this real? It's so good!" The artwork is superb, the writing is pitch perfect and the plot is by turn genuinely harrowing, warm, and funny. The ending feels a little rushed but I hope that Karen's continual refrain of "i'll tell you more about that later" turns out to be true and we get a third volume of this incredible work.
+Part 2 continues to be incredible. Every few pages I'd stop and pinch myself "Is this real? It's so good!" The artwork is superb, the writing is pitch perfect and the plot is by turns genuinely harrowing, warm, and funny. The ending feels a little rushed but I hope that Karen's continual refrain of "i'll tell you more about that later" turns out to be true and we get a third volume of this incredible work.
