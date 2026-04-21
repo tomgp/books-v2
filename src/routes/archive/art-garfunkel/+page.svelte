@@ -1,7 +1,7 @@
 <script>
 	import { browser } from '$app/environment';
-	export let data;
-	let displayData = data.booklist;
+	let { data } = $props();
+	let displayData = $state(data.booklist);
 
 	function filterFavorites() {
 		displayData = data.booklist.filter((book) => book.favorite);
@@ -49,44 +49,44 @@
 	<p>
 		Since the 1960's, Art Garfunkel has been a voracious reader. We are pleased to present a listing
 		of every book Art has read since 1968. To view a list of Art Garfunkel's favorite books, go to
-		<a href="#the-books" on:click={filterFavorites}>Favorites</a>. Books [in bold] are favorites.
+		<a href="#the-books" onclick={filterFavorites}>Favorites</a>. Books [in bold] are favorites.
 	</p>
 </div>
 <h2 id="the-books">Book List</h2>
 <nav>
-	<a href="#the-books" on:click={filterFavorites}>Favorites</a>
-	<a href="#the-books" on:click={clearFilter}>All</a>
+	<a href="#the-books" onclick={filterFavorites}>Favorites</a>
+	<a href="#the-books" onclick={clearFilter}>All</a>
 	<span class="separator">&#10043;</span>
-	<a href={browser ? '#the-books' : '#book-1'} on:click={() => filterBooks(1, 148)}>1968 - 1978</a>
-	<a href={browser ? '#the-books' : '#book-148'} on:click={() => filterBooks(148, 278)}
+	<a href={browser ? '#the-books' : '#book-1'} onclick={() => filterBooks(1, 148)}>1968 - 1978</a>
+	<a href={browser ? '#the-books' : '#book-148'} onclick={() => filterBooks(148, 278)}
 		>1979 - 1983</a
 	>
-	<a href={browser ? '#the-books' : '#book-278'} on:click={() => filterBooks(278, 439)}
+	<a href={browser ? '#the-books' : '#book-278'} onclick={() => filterBooks(278, 439)}
 		>1984 - 1987</a
 	>
-	<a href={browser ? '#the-books' : '#book-439'} on:click={() => filterBooks(439, 572)}
+	<a href={browser ? '#the-books' : '#book-439'} onclick={() => filterBooks(439, 572)}
 		>1988 - 1991</a
 	>
-	<a href={browser ? '#the-books' : '#book-572'} on:click={() => filterBooks(572, 726)}
+	<a href={browser ? '#the-books' : '#book-572'} onclick={() => filterBooks(572, 726)}
 		>1992 - 1996</a
 	>
-	<a href={browser ? '#the-books' : '#book-726'} on:click={() => filterBooks(726, 883)}
+	<a href={browser ? '#the-books' : '#book-726'} onclick={() => filterBooks(726, 883)}
 		>1997 - 2002</a
 	>
-	<a href={browser ? '#the-books' : '#book-883'} on:click={() => filterBooks(883, 1058)}
+	<a href={browser ? '#the-books' : '#book-883'} onclick={() => filterBooks(883, 1058)}
 		>2003 - 2008</a
 	>
-	<a href={browser ? '#the-books' : '#book-1058'} on:click={() => filterBooks(1059, 1214)}
+	<a href={browser ? '#the-books' : '#book-1058'} onclick={() => filterBooks(1059, 1214)}
 		>2009 - 2014</a
 	>
-	<a href={browser ? '#the-books' : '#book-1214'} on:click={() => filterBooks(1214, 1229)}>2015</a>
-	<a href={browser ? '#the-books' : '#book-1229'} on:click={() => filterBooks(1229, 1272)}
+	<a href={browser ? '#the-books' : '#book-1214'} onclick={() => filterBooks(1214, 1229)}>2015</a>
+	<a href={browser ? '#the-books' : '#book-1229'} onclick={() => filterBooks(1229, 1272)}
 		>2016 - 2017</a
 	>
-	<a href={browser ? '#the-books' : '#book-1272'} on:click={() => filterBooks(1272, 1325)}
+	<a href={browser ? '#the-books' : '#book-1272'} onclick={() => filterBooks(1272, 1325)}
 		>2018 - 2021</a
 	>
-	<a href={browser ? '#the-books' : '#book-1325'} on:click={() => filterBooks(1325, 2000)}
+	<a href={browser ? '#the-books' : '#book-1325'} onclick={() => filterBooks(1325, 2000)}
 		>2022 - 2023</a
 	>
 </nav>
@@ -94,7 +94,7 @@
 	<table>
 		<thead>
 			<tr>
-				<th />
+				<th></th>
 				<th>date</th>
 				<th>author</th>
 				<th>title</th>

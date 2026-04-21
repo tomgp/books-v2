@@ -1,7 +1,13 @@
 <script>
-	export let width = 50;
-	export let height = 50;
-	export let rating = ""
+	/**
+	 * @typedef {Object} Props
+	 * @property {number} [width]
+	 * @property {number} [height]
+	 * @property {string} [rating]
+	 */
+
+	/** @type {Props} */
+	let { width = 50, height = 50, rating = "" } = $props();
 </script>
 
 <rect class="book" class:highlight1={rating=="+"} class:highlight2={rating=="++"} stroke="none" {width} {height} />

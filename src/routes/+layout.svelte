@@ -1,6 +1,12 @@
 <script>
-	// import { page } from '$app/stores';
-	// let data = $page.data;
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
+
 </script>
 
 <svelte:head>
@@ -14,7 +20,7 @@
 				<a href="/feed/atom">feed</a>
 			</span>
 		</nav>
-		<slot />
+		{@render children?.()}
 	</main>
 	<footer>
 		<p>

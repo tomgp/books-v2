@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import { bookSlug } from '../../lib/slugger.js';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>

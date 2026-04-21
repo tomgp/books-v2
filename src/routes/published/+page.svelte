@@ -1,6 +1,6 @@
 <script>
   import { scaleLinear, scaleLog, extent } from 'd3';
-  export let data;
+  let { data } = $props();
   let dated = data.list
     .map(read=>{
       return {
@@ -69,7 +69,7 @@ stroke={'black'}
     cy={readScale(book.readDate)}
     fill={book.good ? 'red' : 'white'}
     stroke={book.readDate.getFullYear()==book.publishedDate ? 'red' : 'black'}
-    on:mouseover={()=>console.log(book.title, book.readDate.getFullYear())}>
+    onmouseover={()=>console.log(book.title, book.readDate.getFullYear())}>
   </circle>
 
   {/if}

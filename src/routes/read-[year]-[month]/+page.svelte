@@ -1,5 +1,5 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { bookSlug } from '$lib/slugger.js';
 	let monthName = [
 		'',
@@ -16,7 +16,7 @@
 		'November',
 		'December'
 	];
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>

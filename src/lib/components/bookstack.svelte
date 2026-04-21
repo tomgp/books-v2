@@ -1,62 +1,52 @@
 <script>
+	import { run } from 'svelte/legacy';
+
 	import Book from './Book.svelte';
 
 	import { scaleLinear, scaleBand, randomUniform, randomLcg  } from 'd3';
 
-	export let books = [];
-	export let title = '';
-	export let height = 350;
-	export let width = 700;
-	export let margin = { top: 50, left: 0, bottom: 20, right: 0 };
-	export let jitter = 2.5;
-	export let minPages = 100;
-	export let splitOnKey = (book) => 'books';
+	/**
+	 * @typedef {Object} Props
+	 * @property {any} [books]
+	 * @property {string} [title]
+	 * @property {number} [height]
+	 * @property {number} [width]
+	 * @property {any} [margin]
+	 * @property {number} [jitter]
+	 * @property {number} [minPages]
+	 * @property {any} [splitOnKey]
+	 */
+
+	/** @type {Props} */
+	let {
+		books = [],
+		title = '',
+		height = 350,
+		width = 700,
+		margin = { top: 50, left: 0, bottom: 20, right: 0 },
+		jitter = 2.5,
+		minPages = 100,
+		splitOnKey = (book) => 'books'
+	} = $props();
 
 	let random = randomUniform.source(randomLcg(111177))(-jitter, jitter)
 
 	let booksCopy = [...books].reverse();
 	let meanAspectRatio = 3000; // if 1 page is 1 pixel thick the length of the books spine should be this number of px
-	let meanSpineLength = meanAspectRatio;
+	let meanSpineLength = $state(meanAspectRatio);
 
 	let plotHeight = height - (margin.top + margin.bottom);
 	let plotWidth = width - (margin.left + margin.right);
 
-	let stacks = {};
-	let biggestStack = 0;
-	let stackCount = 0;
+	let stacks = $state({});
+	let biggestStack = $state(0);
+	let stackCount = $state(0);
 	let pageScale = scaleLinear();
 	let stackScale = scaleBand();
 
 
 
-	// split into stacks
-	$: {
-		booksCopy.forEach((book) => {
-			if (!stacks[splitOnKey(book)]) {
-				stacks[splitOnKey(book)] = {
-					pages: 0,
-					bookCount: 0,
-					books: []
-				};
-			}
 
-			stacks[splitOnKey(book)].pages += Math.max(Number(book.pages), minPages);
-			if (biggestStack < stacks[splitOnKey(book)].pages) {
-				biggestStack = stacks[splitOnKey(book)].pages;
-			}
-			stacks[splitOnKey(book)].bookCount++;
-			stacks[splitOnKey(book)].books.push(book);
-		});
-		stackCount = Object.keys(stacks).length;
-	}
-
-	// work out the scales
-	$: {
-		pageScale.domain([0, biggestStack]).range([0, plotHeight]);
-		stackScale.domain(Object.keys(stacks)).range([0, plotWidth]).paddingInner(0.15);
-		meanSpineLength = pageScale(1) * meanAspectRatio;
-		Object.entries(stacks).forEach(layoutStack);
-	}
 
 	function layoutStack([key, stack], i) {
 		let acc = 0;
@@ -75,9 +65,9 @@
 			return book;
 		});
 	}
-	let toolTipHTML = "TOOLTIP"
-	let toolTipActive = false;
-	let tipPos = {x:0, y:0};
+	let toolTipHTML = $state("TOOLTIP")
+	let toolTipActive = $state(false);
+	let tipPos = $state({x:0, y:0});
 	function toolTip(ev, book){
 		toolTipActive = true;
 		toolTipHTML = `<p>${book.title}&nbsp;&mdash; ${book.authors[0]} ${book.authors[1]?`+${book.authors.length-1}`:''}</p>`
@@ -89,6 +79,33 @@
 		toolTipActive = false;
 	}
 
+	// split into stacks
+
+	booksCopy.forEach((book) => {
+		if (!stacks[splitOnKey(book)]) {
+			stacks[splitOnKey(book)] = {
+				pages: 0,
+				bookCount: 0,
+				books: []
+			};
+		}
+
+		stacks[splitOnKey(book)].pages += Math.max(Number(book.pages), minPages);
+		if (biggestStack < stacks[splitOnKey(book)].pages) {
+			biggestStack = stacks[splitOnKey(book)].pages;
+		}
+		stacks[splitOnKey(book)].bookCount++;
+		stacks[splitOnKey(book)].books.push(book);
+	});
+	stackCount = Object.keys(stacks).length;
+
+	// work out the scales
+
+	pageScale.domain([0, biggestStack]).range([0, plotHeight]);
+	stackScale.domain(Object.keys(stacks)).range([0, plotWidth]).paddingInner(0.15);
+	meanSpineLength = pageScale(1) * meanAspectRatio;
+	Object.entries(stacks).forEach(layoutStack);
+	
 </script>
 
 {#if title != ''}<h1>{title}</h1>{/if}
