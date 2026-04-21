@@ -1,6 +1,12 @@
 <script>
-  export let rating="";
-  export let showAverage = true;
+  /**
+   * @typedef {Object} Props
+   * @property {string} [rating]
+   * @property {boolean} [showAverage]
+   */
+
+  /** @type {Props} */
+  let { rating = "", showAverage = true } = $props();
   function getNumericalRating(r){
     if(isNaN(r)){
       let scoreLookup = { "++":5,"+":4,"-":2,"--":1 }

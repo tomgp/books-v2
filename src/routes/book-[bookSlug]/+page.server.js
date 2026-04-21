@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { csvParse } from 'd3';
-import { getMD } from '$lib/get-md.server.js';
+import { getMD } from '../../lib/get-md.server.js';
 
 export async function load({ params }) {
 	const index = JSON.parse(fs.readFileSync('static/data/readIndex.json', 'utf-8'));

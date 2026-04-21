@@ -2,7 +2,7 @@
 	import Bookstack from '$lib/components/bookstack.svelte';
 	import { bookSlug, authorSlug } from '$lib/slugger.js';
 	import RatingIcon from '$lib/components/RatingIcon.svelte';
-	export let data;
+	let { data } = $props();
 
 	// only book that have a date (i.e finished reading them)
 	let currentList = data.readingList.filter((r) => r.date).reverse();
