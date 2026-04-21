@@ -29,7 +29,7 @@
 			> unless otherwise noted.
 		</p>
 		<p>
-			🚧 Permananetly under construction, please excuse the debris, dead ends, poor spelling/
+			🚧 Always under construction, please excuse the debris, dead ends, poor spelling/
 			grammar, and half-baked opinions. 🚧
 		</p>
 		<!-- <pre>{JSON.stringify(data)}</pre> -->
