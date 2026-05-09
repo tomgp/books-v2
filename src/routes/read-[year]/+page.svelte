@@ -1,6 +1,6 @@
 <script>
 	import { marked } from 'marked';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { bookSlug } from '../../lib/slugger.js';
 
 	let { data } = $props();
