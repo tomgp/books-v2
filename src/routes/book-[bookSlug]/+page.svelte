@@ -62,11 +62,13 @@
 		{/if}
 	</div>
 </div>
-<h2>Notes</h2>
-{#each data.content as readThrough}
-	<p>{readThrough.data.date}</p>
-	{@html marked.parse(readThrough.markdown)}
-{/each}
+<section class="notes">
+	<h2>Notes</h2>
+	{#each data.content as readThrough}
+		<p>{readThrough.data.date}</p>
+		{@html marked.parse(readThrough.markdown)}
+	{/each}
+</section>
 
 <style>
 	.start-grid {
@@ -79,5 +81,15 @@
 	}
 	img.photo {
 		filter: drop-shadow(5px -5px 10px rgba(0, 0, 0, 1));
+	}
+
+	:global(.notes img) {
+		display: block;
+		width: 100%;
+		max-width: calc(100% - 2.5rem);
+		margin: auto;
+		margin-top: 1rem;
+		padding: 1rem;
+		border: 1px solid var(--text);
 	}
 </style>
