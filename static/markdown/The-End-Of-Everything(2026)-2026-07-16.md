@@ -2,7 +2,7 @@
  "title": "The End Of Everything",
  "authors": "M John Harrison",
  "date": "2026-07-16",
- "rating": "+",
+ "rating": "++",
  "re-read": "",
  "pages": "196",
  "non-fiction": "",
