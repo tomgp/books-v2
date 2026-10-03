@@ -81,6 +81,8 @@
 		width: 100%;
 	}
 	.year-nav {
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
 		padding-top: 3rem;
 	}
 	.year-nav a {
