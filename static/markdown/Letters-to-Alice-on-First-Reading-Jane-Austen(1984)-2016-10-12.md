@@ -1,8 +1,6 @@
 {
- "title": "Letters to Alice on First Reading Jane Austen ",
+ "title": "Letters to Alice on First Reading Jane Austen",
  "authors": "Fay Weldon",
- "editors": "",
- "translator": "",
  "date": "2016-10-12",
  "rating": "",
  "re-read": "",
@@ -10,7 +8,10 @@
  "non-fiction": "TRUE",
  "comic": "",
  "published": "1984",
- "image": ""
+ "image": "",
+ "tags": "",
+ "editors": "",
+ "translator": ""
 }
 ---
 
