@@ -1,0 +1,48 @@
+name: Update reading list
+
+on:
+  schedule:
+    # 12:00 UTC (GMT) every day. GitHub cron is always UTC.
+    - cron: "0 12 * * *"
+  workflow_dispatch: # allows manual runs from the Actions tab
+
+permissions:
+  contents: write # needed to push the commit
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - name: Download reading list CSV
+        run: |
+          curl -fsSL --create-dirs -o static/data/reading-list.csv \
+            "https://docs.google.com/spreadsheets/d/e/2PACX-1vT57RN-5bxxKm2ZMYMDkcImaQ76vXREJUPxeLG6liWoxEo0uWcBmGtOEmYkDN0LBuUs7R6LCdlICasL/pub?gid=344630572&single=true&output=csv"
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Run scaffold
+        run: npm run scaffold
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "update reading list"
+            git push origin main
+          fi
